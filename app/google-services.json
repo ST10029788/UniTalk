@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "409845598268",
+    "project_id": "unitalk-648b1",
+    "storage_bucket": "unitalk-648b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409845598268:android:3d443dfb3fdd01a981db39",
+        "android_client_info": {
+          "package_name": "com.scriptsquad.unitalk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXXyw5xMlWs7bDl0lTUbvCRtdc4pqihFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
