@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/noticeRl"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="5dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/noticeImageIv"
+                style="@style/ImageStyle_CornerRounded"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:background="@color/colorGray02"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_image_gray" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titleTv"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/noticeRl"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Notice Title" />
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleTv"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/noticeRl"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="Notice Description" />
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/noticeRl"
+            android:text="dd/MM/yyyy"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_delete"
+            android:padding="10dp"
+            android:background="@android:color/transparent"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

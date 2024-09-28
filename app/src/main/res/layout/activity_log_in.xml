@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_mode_background"
+    tools:context=".StartPage.Log_In_Screen">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="512dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/Scroll_view_LogIn"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_mode_background"
+            android:backgroundTint="@color/light_mode_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Use Material Components for buttons -->
+            <ImageView
+                android:id="@+id/logoIv"
+                android:layout_width="248dp"
+                android:layout_height="199dp"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo"
+                app:tint="@null"
+                app:tintMode="src_in" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/LogInGoogleBtn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:shadowColor="#604D4D"
+                android:text="Log In with Google"
+                android:textColor="@color/light_mode_text"
+                android:textColorLink="@color/light_mode_text"
+                android:textStyle="bold"
+                app:backgroundTint="@color/light_mode_light_accent"
+                app:iconTint="@color/light_mode_light_accent"
+                app:rippleColor="@color/light_mode_accent"
+                app:strokeColor="@color/light_mode_text" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/LogInPhoneBtn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:shadowColor="#604D4D"
+                android:text="Log In with Phone Number"
+                android:textColor="@color/light_mode_text"
+                android:textColorLink="@color/light_mode_text"
+                android:textStyle="bold"
+                app:backgroundTint="@color/light_mode_light_accent"
+                app:iconTint="@color/light_mode_light_accent"
+                app:rippleColor="@color/light_mode_accent"
+                app:strokeColor="@color/light_mode_text" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/LogInEmailBtn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:shadowColor="#604D4D"
+                android:text="Log In with Email"
+                android:textColor="@color/light_mode_text"
+                android:textColorLink="@color/light_mode_text"
+                android:textStyle="bold"
+                app:backgroundTint="@color/light_mode_light_accent"
+                app:iconTint="@color/light_mode_light_accent"
+                app:rippleColor="@color/light_mode_accent"
+                app:strokeColor="@color/light_mode_text" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/LogInGuestBtn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:shadowColor="#604D4D"
+                android:text="Log In as a Guest"
+                android:textColor="@color/light_mode_text"
+                android:textColorLink="@color/light_mode_text"
+                android:textStyle="bold"
+                app:backgroundTint="@color/light_mode_light_accent"
+                app:iconTint="@color/light_mode_light_accent"
+                app:rippleColor="@color/light_mode_accent"
+                app:strokeColor="@color/light_mode_text" />
+
+            <TextView
+                android:id="@+id/signupredirect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account? Sign up here"
+                android:textAlignment="center"
+                android:textColor="@color/light_mode_text"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent">-->
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/closeBtn"-->
+    <!--        android:background="@android:color/transparent"-->
+    <!--        android:src="@drawable/round_close_24"-->
+    <!--        android:padding="10dp"-->
+    <!--        />-->
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:contentDescription="@string/Scroll_view_LogIn"-->
+
+    <!--        android:padding="10dp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/logoIv"-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="180dp"-->
+    <!--                android:layout_gravity="center_horizontal"-->
+    <!--                android:adjustViewBounds="true"-->
+    <!--               android:scaleType="centerCrop"-->
+    <!--                android:src="@drawable/logo"-->
+    <!--                app:tint="@color/purple_500"-->
+    <!--                app:tintMode="src_in" />-->
+
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:id="@+id/LogInGoogleBtn"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:minHeight="@dimen/m_button_height"-->
+    <!--                android:text="Continue with Google"-->
+    <!--                app:cornerRadius="8dp"-->
+    <!--                app:icon="@drawable/ic_google_white"-->
+
+
+    <!--                />-->
+
+    <!--            <com.google.android.material.button.MaterialButton-->
+
+    <!--                android:id="@+id/LogInPhoneBtn"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:minHeight="@dimen/m_button_height"-->
+    <!--                app:cornerRadius="8dp"-->
+    <!--                android:text="Continue with Phone"-->
+    <!--                app:icon="@drawable/ic_call_white"-->
+    <!--                />-->
+
+    <!--            <com.google.android.material.button.MaterialButton-->
+    <!--                android:id="@+id/LogInEmailBtn"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:minHeight="@dimen/m_button_height"-->
+    <!--                app:cornerRadius="8dp"-->
+    <!--                android:text="Continue with Email"-->
+    <!--                app:icon="@drawable/ic_email_white"-->
+    <!--                />-->
+
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </ScrollView>-->
+
+
+    <!--</RelativeLayout>-->

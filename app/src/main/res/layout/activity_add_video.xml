@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Socials_Page.activities.Add_Video_Activity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/shape_toolbar01">
+
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:contentDescription="@string/back_btn"
+            android:src="@drawable/ic_back_white" />
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/backBtn"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/youtubeone" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iconIv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Add Video"
+            android:fontFamily="@font/salmapro_medium"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/titleEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/shape_edittext01"
+            android:drawableStart="@drawable/ic_image_gray"
+            android:drawablePadding="10dp"
+            android:hint="Add Video HashTag or Title"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorGray01" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/black"
+        app:use_controller="true"
+        android:layout_below="@+id/titleTil" />
+
+    <ImageButton
+        android:id="@+id/closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:layout_below="@+id/titleTil"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/close_btn"
+        android:src="@drawable/ic_close_red" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/VideoPickBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_below="@+id/player_view"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/add_paper_btn"
+        android:src="@drawable/ic_add_white"
+        app:backgroundTint="@color/light_mode_light_accent"
+        app:cornerRadius="8dp"
+        app:tint="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/publishBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Publish Video"
+        app:cornerRadius="8dp"
+        android:layout_below="@+id/player_view"
+        android:layout_toEndOf="@+id/VideoPickBtn"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/light_mode_accent"
+        android:minHeight="55dp"/>
+
+</RelativeLayout>

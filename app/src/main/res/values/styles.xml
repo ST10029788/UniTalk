@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Image Styles -->
+    <style name="ImageStyle_circle">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="ImageStyle_CornerRounded">
+        <item name="cornerSize">10dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <!-- Light Mode Theme -->
+    <style name="Base.Theme.UniTalk.Light" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/light_mode_accent</item>
+        <item name="colorOnBackground">@color/light_mode_background</item>
+        <item name="android:textColor">@color/light_mode_text</item>
+    </style>
+
+    <!-- Dark Mode Theme -->
+    <style name="Base.Theme.UniTalk.Dark" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/dark_mode_accent</item>
+        <item name="colorOnBackground">@color/dark_mode_background</item>
+        <item name="android:textColor">@color/dark_mode_text</item>
+    </style>
+
+    <!-- Default Theme: Will Automatically Switch Between Light and Dark -->
+    <style name="Theme.UniTalk" parent="Base.Theme.UniTalk.Light" tools:targetApi="29" />
+
+    <!-- Custom Dialog -->
+    <style name="CustomDialog" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- Custom TextInputLayout -->
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:background">@color/light_mode_light_accent</item>
+    </style>
+
+</resources>

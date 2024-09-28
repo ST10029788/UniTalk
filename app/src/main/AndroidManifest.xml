@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"
+        android:usesCleartextTraffic="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".Notes.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UniTalk"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Ai_Page.AI_Activity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+
+        </activity>
+
+        <activity
+            android:name=".Notices_Page.activities.Admin_Notice_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".About_Page.About_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Socials_Page.activities.Download_Picture_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Socials_Page.activities.Download_Video_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Socials_Page.activities.Add_Video_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Socials_Page.activities.Add_Picture_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Materials.activities.PaperPdfViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Materials.activities.PaperDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Materials.activities.EditPaperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Materials.activities.AdminPaperPdfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Materials.activities.AdminPaperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Materials.activities.PaperPdfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Materials.activities.AddPapersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Materials.activities.AddCategoryPapersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Materials.activities.PaperUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Socials_Page.activities.Socials_Gallery_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatRoom.activities.Image_Upload_Preview_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Notices_Page.activities.Notice_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Notices_Page.activities.Notices_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Notices_Page.activities.Admin_Notices_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Notes.activities.BooksDashboardUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Notes.activities.PdfViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Notes.activities.PdfDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Notes.activities.PdfEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Notes.activities.BookPdfAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Notes.activities.PdfAddActivityBooks"
+            android:exported="false" />
+        <activity
+            android:name=".Notes.activities.AddCategoryBooksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Notes.activities.BooksAdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Marketplace.activities.Chat_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Marketplace.activities.Ad_Seller_Profile_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".About_Page.About_Us_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".YTLectures_Page.Lectures_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.Account_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".StartPage.Main_Home_Screen"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".Marketplace.activities.Location_Picker_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Marketplace.activities.Create_Ad_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.Delete_Account_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.Change_Password_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.Forgot_Password_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.Edit_Profile_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".StartPage.Log_In_Using_Phone_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".StartPage.Register_Using_Email_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".StartPage.Log_In_Using_Email_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".StartPage.Log_In_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".StartPage.Main_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Marketplace.activities.Ad_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatRoom.activities.Chat_Room_Activity"
+            android:exported="false" /> <!-- com.google.android.geo.api.API_KEY is the recommended meta data for the API key -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/my_google_map_api_key" />
+
+        <service
+            android:name=".Utilities.Firebase_Cloud_Messaging_Service"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- Chat Room -->
+        <!-- Image Cropper -->
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Theme.UniTalk"
+        />
+    </application>
+
+</manifest>
