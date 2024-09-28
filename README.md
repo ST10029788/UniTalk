@@ -80,6 +80,9 @@ This Android Application, created as part of the OPSC7312 module, is designed to
 
 
 ## Aim
+Navigating the complexities of college life requires effective management of academic and personal responsibilities. Many students face challenges in staying organized, accessing essential resources, and communicating efficiently with peers and faculty.
+To address these challenges, we introduce UniTalk, a comprehensive college management application designed to streamline and enhance the student experience. UniTalk offers a centralized platform for managing academic schedules, accessing educational resources, engaging in campus activities, and connecting with the university community. With features tailored to meet the diverse needs of students, UniTalk aims to simplify college life and support academic and personal growth.
+
 
 ## Technologies Used
 Mobile Frontend: Kotlin
