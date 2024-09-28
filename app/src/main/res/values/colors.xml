@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="light_mode_background">#FFFAF5</color>
+    <color name="light_mode_accent">#E79CB9</color>
+    <color name="light_mode_light_accent">#FED7E3</color>
+    <color name="light_mode_text">#633B48</color>
+    <color name="dark_mode_background">#3A3A3A</color>
+    <color name="dark_mode_accent">#73BFB9</color>
+    <color name="dark_mode_text">#C0FFFA</color>
 </resources>
