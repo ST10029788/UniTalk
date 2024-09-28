@@ -15,6 +15,70 @@ This Android Application, created as part of the OPSC7312 module, is designed to
 
 ## Features
 
+1. **Socials Page**: 
+   - Users can upload and download images and videos.
+   - Comment on media shared by others, creating a social environment for students to engage with each other.
+   
+2. **Marketplace**:
+   - View ads within a 60km radius for items such as textbooks, laptops, and electronics.
+   - Upload, edit, or delete personal ads.
+   - Users can favorite ads and chat with the poster to discuss further details about the listings.
+   
+3. **Media Features**:
+   - Browse and view uploaded college materials, such as student notes, papers, and tests.
+   - Provides an easy-to-access repository of educational content.
+   
+4. **Notice Board**:
+   - Admins can post updates, and users will receive a push notification to inform them of new content.
+   
+5. **Chatroom**:
+   - Chat with other users in real-time.
+   - Share pictures within the chatroom, enhancing the communication experience.
+   
+6. **Quick Access to YouTube Lectures**:
+   - Easily access YouTube educational videos relevant to your coursework.
+
+8. **Role-based Access**:
+   - Student users can access features like Socials, Marketplace, Media, and Chatroom.
+   - Admin users have permissions to upload media content and notices.
+   - Email domains such as `@varsitycollege.co.za`, `@iie.ac.za`, and `@vcconnect.edu.za` are required for registration.
+
+
+- **AI Assistant**: 
+   Provides academic support by answering student questions.
+
+- **Marketplace**: 
+   A platform for students to buy and sell textbooks and other educational materials, with in-app communication for easy negotiations between buyers and sellers.
+
+- **Communication**: 
+   A dedicated chatroom for discussions related to university life, coursework, and more. Users can also share media within the chat.
+
+- **Easy Information Access via Tiled Dashboard**: 
+   - A visually distinct dashboard organizes key features for quick access. Sections are clearly labeled with icons to aid accessibility, including for neurodivergent individuals and non-technically inclined users.
+
+- **Admin Features**:
+   - Admin users can create, publish, and delete notices.
+   - Admins can upload student materials and manage educational content.
+
+- **Notices**:
+   - A section for important college announcements. Users receive push notifications when new notices are posted.
+  
+- **Social Gallery**:
+   - A gallery featuring images from Varsity College’s social events and activities.
+
+- **Account Management**:
+   - Users can manage their profiles, edit their details, verify their student status, and delete their accounts if necessary.
+
+- **About Us**:
+   - Provides information about the app developers and the project.
+
+- **Settings**:
+   - Users can personalize their experience by toggling push notifications, switching between dark and light themes, and managing other preferences.
+
+- **Log Out**:
+   - Users can log out securely, and will be redirected to the login screen for added security.
+
+
 ## Aim
 
 ## Technologies Used
