@@ -17,12 +17,14 @@ This Android Application, created as part of the OPSC7312 module, is designed to
 
 1. **Socials Page**: 
    - Users can upload and download images and videos.
+   - A gallery featuring images from Varsity College’s social events and activities.
    - Comment on media shared by others, creating a social environment for students to engage with each other.
    
 2. **Marketplace**:
    - View ads within a 60km radius for items such as textbooks, laptops, and electronics.
    - Upload, edit, or delete personal ads.
    - Users can favorite ads and chat with the poster to discuss further details about the listings.
+   - A platform for students to buy and sell textbooks and other educational materials, with in-app communication for easy negotiations between buyers and sellers.
    
 3. **Media Features**:
    - Browse and view uploaded college materials, such as student notes, papers, and tests.
@@ -31,9 +33,10 @@ This Android Application, created as part of the OPSC7312 module, is designed to
 4. **Notice Board**:
    - Admins can post updates, and users will receive a push notification to inform them of new content.
    
-5. **Chatroom**:
+5. **Chatroom Communication**:
    - Chat with other users in real-time.
    - Share pictures within the chatroom, enhancing the communication experience.
+   - A dedicated chatroom for discussions related to university life, coursework, and more. Users can also share media within the chat.
    
 6. **Quick Access to YouTube Lectures**:
    - Easily access YouTube educational videos relevant to your coursework.
@@ -43,44 +46,33 @@ This Android Application, created as part of the OPSC7312 module, is designed to
    - Admin users have permissions to upload media content and notices.
    - Email domains such as `@varsitycollege.co.za`, `@iie.ac.za`, and `@vcconnect.edu.za` are required for registration.
 
-
-- **AI Assistant**: 
+ 9. **AI Assistant**: 
    Provides academic support by answering student questions.
 
-- **Marketplace**: 
-   A platform for students to buy and sell textbooks and other educational materials, with in-app communication for easy negotiations between buyers and sellers.
-
-- **Communication**: 
-   A dedicated chatroom for discussions related to university life, coursework, and more. Users can also share media within the chat.
-
-- **Easy Information Access via Tiled Dashboard**: 
+10. **Easy Information Access via Tiled Dashboard**: 
    - A visually distinct dashboard organizes key features for quick access. Sections are clearly labeled with icons to aid accessibility, including for neurodivergent individuals and non-technically inclined users.
 
-- **Admin Features**:
+11. **Admin Features**:
    - Admin users can create, publish, and delete notices.
    - Admins can upload student materials and manage educational content.
 
-- **Notices**:
-   - A section for important college announcements. Users receive push notifications when new notices are posted.
-  
-- **Social Gallery**:
-   - A gallery featuring images from Varsity College’s social events and activities.
-
-- **Account Management**:
+12. **Account Management**:
    - Users can manage their profiles, edit their details, verify their student status, and delete their accounts if necessary.
 
-- **About Us**:
+13. **About Us**:
    - Provides information about the app developers and the project.
 
-- **Settings**:
-   - Users can personalize their experience by toggling push notifications, switching between dark and light themes, and managing other preferences.
+14. **Settings**:
+   - Users can personalize their experience by switching between dark and light themes, changing their password, verifying their account and managing other preferences.
 
-- **Log Out**:
+15. **Log Out**:
    - Users can log out securely, and will be redirected to the login screen for added security.
 
 
 ## Aim
-Navigating the complexities of college life requires effective management of academic and personal responsibilities. Many students face challenges in staying organized, accessing essential resources, and communicating efficiently with peers and faculty.
+Navigating the complexities of college life requires effective management of academic and personal responsibilities. 
+Many students face challenges in staying organized, accessing essential resources, and communicating efficiently with peers and faculty.
+
 To address these challenges, we introduce UniTalk, a comprehensive college management application designed to streamline and enhance the student experience. UniTalk offers a centralized platform for managing academic schedules, accessing educational resources, engaging in campus activities, and connecting with the university community. With features tailored to meet the diverse needs of students, UniTalk aims to simplify college life and support academic and personal growth.
 
 
@@ -88,6 +80,7 @@ To address these challenges, we introduce UniTalk, a comprehensive college manag
 Mobile Frontend: Kotlin
 Backend: Firebase (For Authentication, Database, Storage, Hosting)
 Real-time Database: Firebase Realtime Database
+API: Node.js
 
 ## Running the App
 
@@ -151,5 +144,5 @@ Real-time Database: Firebase Realtime Database
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Developer Details
-
+Developed as part of our OPSC7312 module. 
 
