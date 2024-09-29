@@ -5,6 +5,9 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+//GitHub. (2021). Received status code 401 from server: Unauthorized · Issue #1037 · DImuthuUpe/AndroidPdfViewer. [online] Available at: https://github.com/DImuthuUpe/AndroidPdfViewer/issues/1037#issuecomment-2307015289 [Accessed 29 Sep. 2024].
+//
+//‌
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -12,8 +15,12 @@ dependencyResolutionManagement {
         maven { url 'https://jcenter.bintray.com/' }
         google()
         mavenCentral()
+        mavenLocal()   // ---->>> try adding this
+        //jcenter() // ---->> Add this
+
         maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
         maven { url "https://oss.sonatype.org/content/repositories/releases" }
+        maven { url "https://jcenter.bintray.com"}
 
     }
 }

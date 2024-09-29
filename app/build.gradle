@@ -96,6 +96,8 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-firestore:8.0.2'
     implementation 'com.google.maps.android:android-maps-utils:3.8.0'
 
+
+
 }
 
 
