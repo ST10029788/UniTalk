@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F5F5"
+    android:background="@color/colorGray01"
     tools:context=".About_Page.About_Us_Activity">
 
     <ScrollView
@@ -101,6 +101,7 @@
                         android:id="@+id/githubRl"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@null"
                         android:padding="16dp">
 
                         <ImageView

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FEF9F4"
+    android:background="@color/colorGray01"
     android:paddingBottom="10dp"
     tools:context=".Account.Account_Activity">
 
@@ -318,9 +318,12 @@
 
                 <Switch
                     android:id="@+id/darkModeSwitch"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Dark Mode" />
+                    android:layout_width="147dp"
+                    android:layout_height="43dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:text="Dark Mode"
+                    android:textColor="@color/light_mode_text" />
 
 
             </LinearLayout>
