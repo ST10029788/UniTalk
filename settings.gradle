@@ -21,6 +21,12 @@ dependencyResolutionManagement {
         maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
         maven { url "https://oss.sonatype.org/content/repositories/releases" }
         maven { url "https://jcenter.bintray.com"}
+        maven { url "https://jitpack.io"
+            credentials {
+            username = 'ST10029788'
+            password = 'jp_ksd3gkibt0b6lqqi1f2hu78cj3'
+        }}
+
 
     }
 }
