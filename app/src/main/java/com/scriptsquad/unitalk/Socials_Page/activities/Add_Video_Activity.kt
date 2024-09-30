@@ -33,6 +33,7 @@ import www.sanju.motiontoast.MotionToastStyle
 
 class Add_Video_Activity : AppCompatActivity() {
 
+    // Late-initialized variables for the activity's binding, Firebase authentication, and progress dialog
     private lateinit var binding: ActivityAddVideoBinding
 
     private lateinit var firebaseAuth: FirebaseAuth
@@ -41,6 +42,7 @@ class Add_Video_Activity : AppCompatActivity() {
 
     private var videoUri: Uri? = null
 
+    // Companion object to hold the TAG for logging
     private companion object {
         private const val TAG = "ADD_VIDE_TAG"
     }
@@ -88,9 +90,12 @@ class Add_Video_Activity : AppCompatActivity() {
 
     }
 
+    // Variables to store the title and upload video URL
     private var titleVideo = ""
 
     private var uploadVideoUrl = ""
+
+    // Validate the data before uploading
     private fun validateData() {
 
         titleVideo = binding.titleEt.text.toString()
@@ -114,6 +119,7 @@ class Add_Video_Activity : AppCompatActivity() {
 
     }
 
+    // Upload the video to Firebase storage
     private fun uploadVideoToStorage() {
         progressDialog.setMessage("Uploading Video...")
         progressDialog.show()
