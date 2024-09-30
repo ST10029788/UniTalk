@@ -22,25 +22,31 @@ import java.util.concurrent.TimeUnit
 //method used from YouTube
 //https://youtu.be/H_maapn4Q3Q?si=_1siEM622Nqtcr-s
 //channel: TECH_WORLD
+// Class representing the phone login activity
 class Log_In_Using_Phone_Activity : AppCompatActivity() {
 
+    // Late-initialized variables for the activity's binding and Firebase authentication
     private lateinit var binding:ActivityLoginPhoneBinding
 
+    // Companion object to hold the TAG for logging
     private companion object{
         private const val TAG="Phone_LOGIN_TAG"
     }
 
+    // Late-initialized variables for the progress dialog, Firebase authentication, and phone verification
     private lateinit var progressDialog: ProgressDialog
     private lateinit var firebaseAuth: FirebaseAuth
     private var forceRefreshingToken:ForceResendingToken?=null
     private lateinit var mCallbacks :OnVerificationStateChangedCallbacks
     private var mVerificationId:String?=null
 
+    // Called when the activity is created
     override fun onCreate(savedInstanceState: Bundle?) {
         binding=ActivityLoginPhoneBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        // Set the initial visibility of the phone input and OTP input layouts
         binding.phoneInputRl.visibility= View.VISIBLE
         binding.otpInputRl.visibility=View.GONE
 
@@ -52,6 +58,7 @@ progressDialog=ProgressDialog(this)
 
         firebaseAuth=FirebaseAuth.getInstance()
 
+        // Set up the phone login callbacks
         phoneLoginCallBacks()
 
         // handle toolBack btn
@@ -59,21 +66,26 @@ progressDialog=ProgressDialog(this)
            onBackPressedDispatcher.onBackPressed()
         }
 
+        // Send OTP button click listener
         binding.sendOtpBtn.setOnClickListener {
             validateData()
         }
 
+        // Resend OTP text view click listener
         binding.resendOtpTv.setOnClickListener {
             resendVerificationCode(forceRefreshingToken!!)
         }
+        // Verify OTP button click listener
         binding.verifyOtpBtn.setOnClickListener {
             val otp = binding.otpEt.text.toString().trim()
             Log.d(TAG,"onCreate: otp : $otp")
 
+            // Check if the OTP is empty
             if (otp.isEmpty()){
                 binding.otpEt.error="Enter OTP"
                 binding.otpEt.requestFocus()
             }
+            // Check if the OTP length is less than 6
             else if (otp.length <6){
                 binding.otpEt.error = "OTP length must be 6 characters long"
                 binding.otpEt.requestFocus()
@@ -86,15 +98,18 @@ progressDialog=ProgressDialog(this)
 
     }
 
+    // Variables to store the user's phone code and phone number
     private var phoneCode=""
     private var phoneNumber=""
     private var phoneNumberWithCode=""
 
+    // Method to validate the user's input data
     private fun validateData(){
 phoneCode=binding.phoneCodeTil.selectedCountryCodeWithPlus
         phoneNumber=binding.phoneNumber.text.toString().trim()
         phoneNumberWithCode=phoneCode + phoneNumber
 
+        // Log the user's phone code and phone number for debugging purposes
         Log.d(TAG,"validateData: phoneCode: $phoneCode")
         Log.d(TAG,"validateData: phoneNumber: $phoneNumber")
         Log.d(TAG,"validateData: phoneNumberWithCode: $phoneNumberWithCode")
@@ -112,6 +127,7 @@ phoneCode=binding.phoneCodeTil.selectedCountryCodeWithPlus
     //method used from YouTube
     //https://youtu.be/3V3W3HjYzog?si=T4VIT3OJocWrVyEM
     //channel: Papaya Coders
+    // Method to start the phone number verification
     private fun startPhoneNumberVerification(){
         Log.d(TAG,"startPhoneNumberVerification: ")
         progressDialog.setTitle("Sending OTP to $phoneNumberWithCode")
@@ -127,6 +143,7 @@ phoneCode=binding.phoneCodeTil.selectedCountryCodeWithPlus
         PhoneAuthProvider.verifyPhoneNumber(option)
     }
 
+    // Method to set up the phone login callbacks
     private fun phoneLoginCallBacks(){
         Log.d(TAG,"phoneLoginCallBacks:")
 
