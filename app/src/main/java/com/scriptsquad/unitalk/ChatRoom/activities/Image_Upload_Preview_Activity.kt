@@ -42,6 +42,10 @@ class Image_Upload_Preview_Activity : AppCompatActivity() {
         private const val TAG = "ADD_IMAGE_CHATROOM_TAG"
     }
 
+    //method used from YouTube
+    //https://youtu.be/YgjYVbg1oiA?si=QKVIwZ-YUWmvgfal
+    //CodeWithChris
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         binding = ActivityImageUploadPreviewBinding.inflate(layoutInflater)
