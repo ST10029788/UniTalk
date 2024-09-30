@@ -93,8 +93,6 @@ object Utils {
     }
 
 
-
-
     fun chatPath(receiptUid: String, yourUid: String): String {
         val arrayUids = arrayOf(receiptUid, yourUid)
 
@@ -171,3 +169,6 @@ object Utils {
         }
     }
 }
+//method used from YouTube
+//https://youtu.be/5UEdyUFi_uQ?si=xhb69VRxKWuECmPN
+//channel: LearningWorldz

@@ -32,9 +32,10 @@ class Lectures_Activity : AppCompatActivity() {
 
 
     }
-
-    // Function to load Lectures according to year and department and setting Adapter on Spinner
-
+     //method was used from YouTube
+     //https://youtu.be/z1gPVH7PspE?si=X1krtrLkbM4y9dr0
+     //channel: Smartherd
+     // Function to load Lectures according to year and department and setting Adapter on Spinner
     private fun selectCategory() {
         val spinner: Spinner = binding.spinnerMain
         val listItem = listOf<String>(

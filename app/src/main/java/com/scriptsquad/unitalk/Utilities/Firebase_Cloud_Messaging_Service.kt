@@ -14,6 +14,9 @@ import com.scriptsquad.unitalk.R
 import com.scriptsquad.unitalk.Notices_Page.activities.Notices_Activity
 import com.scriptsquad.unitalk.Marketplace.activities.Chat_Activity
 import java.util.Random
+//method was used from Rein Tech
+//https://reintech.io/term/firebasemessagingservice
+//Rein Tech
 
 class Firebase_Cloud_Messaging_Service : FirebaseMessagingService() {
 
@@ -51,7 +54,9 @@ class Firebase_Cloud_Messaging_Service : FirebaseMessagingService() {
         }
 
     }
-
+    //method was used from YouTube
+    //https://youtu.be/GDxj8KTmLrI?si=DHVvlDaqa8GrwADk
+    //channel: SNA Tech
     private fun showChatNotification(
         notificationTitle: String,
         notificationDescription: String,
