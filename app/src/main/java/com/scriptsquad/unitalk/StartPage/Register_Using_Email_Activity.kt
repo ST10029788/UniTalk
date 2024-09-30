@@ -14,16 +14,24 @@ import com.scriptsquad.unitalk.databinding.ActivityRegisterEmailBinding
 import www.sanju.motiontoast.MotionToast
 import www.sanju.motiontoast.MotionToastStyle
 
+//method used from YouTube
+//https://youtu.be/tbh9YaWPKKs?si=qh4THfrN5JV7ZaHL
+//SmallAcademy
+// Class representing the register using email activity
 class Register_Using_Email_Activity : AppCompatActivity() {
+    // Late-initialized variables for the activity's binding, Firebase authentication, and progress dialog
     private lateinit var binding: ActivityRegisterEmailBinding
     private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var progressDialog: ProgressDialog
 
+    // Companion object to hold the TAG for logging
     private companion object {
         private const val TAG = "REGISTER_TAG"
     }
 
+    // Called when the activity is created
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Inflate the activity's layout and bind it to the activity
         binding = ActivityRegisterEmailBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -43,22 +51,26 @@ class Register_Using_Email_Activity : AppCompatActivity() {
         }
     }
 
-    // input data
+    // Variables to store the user's input data
     private var name = ""
     private var email = ""
     private var password = ""
     private var cPassword = ""
 
+    // Method to validate the user's input data
     private fun validData() {
+        // Method to validate the user's input data
         name = binding.nameEt.text.toString().trim()
         email = binding.emailEt.text.toString().trim()
         password = binding.passwordEt.text.toString().trim()
         cPassword = binding.ConfirmpasswordEt.text.toString().trim()
 
+        // Log the user's input data for debugging purposes
         Log.d(TAG, "validateData: email :$email")
         Log.d(TAG, "validateData: password :$password")
         Log.d(TAG, "validateData: confirmPassword :$cPassword")
 
+        // Define the allowed email domains
         val allowedDomains = listOf("@vcconnect.edu.za", "@iie.ac.za", "@varsitycollege.co.za")
 
         // Validate email domain
@@ -85,6 +97,7 @@ class Register_Using_Email_Activity : AppCompatActivity() {
         }
     }
 
+    // Method to register the user
     private fun registerUser() {
         progressDialog.setMessage("Creating Account")
         progressDialog.show()
@@ -112,6 +125,7 @@ class Register_Using_Email_Activity : AppCompatActivity() {
             }
     }
 
+    // Method to update the user's info in the Firebase database
     private fun updateUserInfo() {
         Log.d(TAG, "updateUserInfo")
         progressDialog.setMessage("Saving User Info")
@@ -120,6 +134,7 @@ class Register_Using_Email_Activity : AppCompatActivity() {
         val registerUserEmail = firebaseAuth.currentUser!!.email
         val registeredUserUid = firebaseAuth.uid
 
+        // Create a hash map to store the user's info
         val hashMap = HashMap<String, Any>()
         hashMap["name"] = "$name"
         hashMap["phoneCode"] = ""
@@ -148,3 +163,6 @@ class Register_Using_Email_Activity : AppCompatActivity() {
             }
     }
 }
+//method used from YouTube
+//https://youtu.be/TwHmrZxiPA8?si=KL-4IHmyOM0_qlol
+//SmallAcademy

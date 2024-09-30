@@ -35,18 +35,24 @@ import com.google.firebase.messaging.ktx.messaging
 import com.scriptsquad.unitalk.Account.Account_Activity
 import com.scriptsquad.unitalk.Ai_Page.AI_Activity
 import com.scriptsquad.unitalk.R
-
+// Class representing the main home screen activity
 class Main_Home_Screen : AppCompatActivity() {
+    // Late-initialized variables for the activity's binding and Firebase authentication
     private lateinit var binding: ActivityMainHomeBinding
     private lateinit var firebaseAuth: FirebaseAuth
 
+    // Companion object to hold the TAG for logging
     private companion object {
         private const val TAG = "MAIN_HOME_ACTIVITY_TAG"
     }
 
+    // Variable to store the user mode
     private var userMode = ""
 
-
+    //method used from YouTube
+    // https://youtu.be/H_maapn4Q3Q?si=_1siEM622Nqtcr-s
+    //channel: TECH_WORLD
+    // Called when the activity is created
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityMainHomeBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
@@ -55,13 +61,10 @@ class Main_Home_Screen : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
 
         showsplash()
-
-
-
-
         getUserName()
         subscribeToTopic()
 
+        // Check if the user is logged in
         if (firebaseAuth.currentUser == null) {
             startActivity(Intent(this@Main_Home_Screen, Log_In_Screen::class.java))
         } else {
@@ -72,7 +75,9 @@ class Main_Home_Screen : AppCompatActivity() {
         binding.books.setOnClickListener {
             checkUserMode()
         }
+        // Chat room button click listener
         binding.chatRoomCv.setOnClickListener {
+            // Check the user mode and start the corresponding activity
             when (userMode) {
                 "USER" -> {
                     startActivity(Intent(this, Chat_Room_Activity::class.java))
@@ -96,7 +101,9 @@ class Main_Home_Screen : AppCompatActivity() {
 
         }
 
+        // Person home button click listener
         binding.personHomeIv.setOnClickListener {
+            // Check the user mode and start the corresponding activity
             when (userMode) {
                 "USER" -> {
                     startActivity(Intent(this@Main_Home_Screen, Account_Activity::class.java))
@@ -288,7 +295,9 @@ class Main_Home_Screen : AppCompatActivity() {
         })
     }
 
-
+    //method was from YouTube
+    //https://youtu.be/_9uHFGXLUnk?si=c-lY_lE9ZFsDsiIK
+    //channel: Ravecode Android
     private fun showsplash() {
         val dialog =
             Dialog(this@Main_Home_Screen, android.R.style.Theme_Light_NoTitleBar_Fullscreen)
@@ -364,7 +373,9 @@ class Main_Home_Screen : AppCompatActivity() {
             }
 
     }
-
+    //method used from YouTube
+    //https://youtu.be/vUf0cIRtV8A?si=gMEKH3nHgdLOzsbx
+    //channel: Generic Apps
     private fun askNotificationPermission() {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {

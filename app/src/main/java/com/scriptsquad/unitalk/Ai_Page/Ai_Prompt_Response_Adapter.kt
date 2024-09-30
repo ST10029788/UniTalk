@@ -41,5 +41,8 @@ class Ai_Prompt_Response_Adapter(private val items: List<Ai_Prompt_Response_Pair
 
     override fun getItemCount() = items.size
 }
+//method used from YouTube
+//https://youtu.be/Vyqz_-sJGFk?si=uaBbOS1fecmu0o4G
+//channel: CodingWithMitch
 
 

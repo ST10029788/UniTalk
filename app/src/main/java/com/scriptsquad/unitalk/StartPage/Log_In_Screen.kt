@@ -18,21 +18,27 @@ import com.scriptsquad.unitalk.Utilities.Utils
 import com.scriptsquad.unitalk.databinding.ActivityLogInBinding
 import java.lang.Exception
 
+//method used from YouTube
+//https://youtu.be/H_maapn4Q3Q?si=_1siEM622Nqtcr-s
+//channel: TECH_WORLD
 class Log_In_Screen : AppCompatActivity() {
 
     private companion object {
         private const val TAG = "LOGIN_OPTIONS_TAG"
     }
 
+    // Late-initialized variables for Google sign-in client, progress dialog, and Firebase authentication
     private lateinit var mGoogleSignInClient: GoogleSignInClient
     private lateinit var progressDialog: ProgressDialog
     private lateinit var firebaseAuth: FirebaseAuth
 
+    // Late-initialized variable for the activity's binding
     private lateinit var binding: ActivityLogInBinding
     override fun onCreate(savedInstanceState: Bundle?) {
 
 
         super.onCreate(savedInstanceState)
+        // Inflate the activity's layout and bind it to the activity
         binding = ActivityLogInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -42,9 +48,10 @@ class Log_In_Screen : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
+        // Create a default admin account if it doesn't exist
         createDefaultAdminAccount()
 
-
+        // Configure Google sign-in options
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail().build()
@@ -74,7 +81,9 @@ class Log_In_Screen : AppCompatActivity() {
 
     }
 
-
+    //method used from YouTube
+    //https://youtu.be/KJ3ChWp0Qd0?si=IVsBM_mGkUYfSmAF
+    //channel: Coding Meet
     private fun createDefaultAdminAccount() {
         val email = "admin@varsitycollege.co.za"
         val password = "admin123"
@@ -104,12 +113,14 @@ class Log_In_Screen : AppCompatActivity() {
     private val email: String = "guestuser@gmail.com"
     private val password: String = "1234guest"
 
+    // Method to continue as a guest
     private fun continueAsGuest() {
         Log.d(TAG, "loginUser")
         progressDialog.setTitle("Logging In...")
         progressDialog.setMessage("Loading...")
         progressDialog.show()
 
+        // Sign in as the guest using Firebase authentication
         firebaseAuth.signInWithEmailAndPassword(email, password)
             .addOnSuccessListener {
 
@@ -125,16 +136,17 @@ class Log_In_Screen : AppCompatActivity() {
             }
     }
 
-
+    // Method to begin the Google login process
     private fun beginGoogleLogin() {
         Log.d(TAG, "beginGoogleLogin:")
         val googleSignInIntent = mGoogleSignInClient.signInIntent
         googleSignnInARL.launch(googleSignInIntent)
     }
 
+    // Activity result launcher for the Google sign-in activity
     private val googleSignnInARL = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
-    ) { result ->
+    ) { result -> // Check if the result is OK
         Log.d(TAG, "googleSignInARL: ")
         if (result.resultCode == RESULT_OK) {
             val data = result.data
@@ -154,10 +166,13 @@ class Log_In_Screen : AppCompatActivity() {
         }
 
     }
-
+    //method used from YouTube
+    //https://youtu.be/pP7quzFmWBY?si=WfuxedAC0XF6HfuF
+    //channel: Firebase
     private fun firebaseAuthWithGoogleAccount(idToken: String?) {
         Log.d(TAG, "firebaseAuthWithGoogleAccount: idToken : $idToken")
 
+        // Sign in with the credential
         val credential = GoogleAuthProvider.getCredential(idToken, null)
         firebaseAuth.signInWithCredential(credential)
             .addOnSuccessListener { authResult ->
@@ -177,12 +192,14 @@ class Log_In_Screen : AppCompatActivity() {
             }
     }
 
+    // Method to update the user's info in the Firebase database
     private fun updateUserInfoDb() {
         Log.d(TAG, "Saving User Info")
 
         progressDialog.setTitle("Saving User Info")
         progressDialog.show()
 
+        // Get the current timestamp
         val timestamp = Utils.getTimestamp()
         val registerUserEmail = firebaseAuth.currentUser?.email
         val registerUserUid = firebaseAuth.uid
@@ -190,6 +207,7 @@ class Log_In_Screen : AppCompatActivity() {
 
         val hashMap = HashMap<String, Any?>()
 
+        // Add the user's info to the hash map
         hashMap["name"] = "$name"
         hashMap["phoneCode"] = ""
         hashMap["phoneNumber"] = ""

@@ -48,6 +48,10 @@ class Ad_Details_Activity : AppCompatActivity() {
     // list of Ad's images to show in slider
     private lateinit var imageSliderArrayList: ArrayList<ModelImageSlider>
 
+//method used from YouTube
+//https://youtu.be/ptBW9tP2cHA?si=bcCP_TT2R_uxNh_M
+//channel: Smartherd
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAdDetailsBinding.inflate(layoutInflater)
@@ -130,6 +134,9 @@ class Ad_Details_Activity : AppCompatActivity() {
 
 
     }
+//method used from YouTube
+//https://youtu.be/uhXn8RcKKbI?si=PWiZhYhIIFKU8pb9
+//channel: Android Knowledge
 
     private fun editOptionsDialog() {
         Log.d(TAG, "editOptionsDialog: ")
@@ -190,6 +197,9 @@ class Ad_Details_Activity : AppCompatActivity() {
             }
             .show()
     }
+//method used from YouTube
+//https://youtu.be/_-vDIK3slU4?si=-64t8X-kHlQGe4En
+//channel: CodeAndroid
 
     private fun loadAdDetails() {
         Log.d(TAG, "loadAdsDetails:")
@@ -298,6 +308,9 @@ class Ad_Details_Activity : AppCompatActivity() {
 
             })
     }
+//method used from YouTube
+//https://youtu.be/mNKQ9dc1knI?si=Zl5SD0u9dZ3kjbey
+//Philipp Lackner
 
     private fun loadSellerDetails() {
         Log.d(TAG, "loadSellerDetails:")
@@ -395,6 +408,9 @@ class Ad_Details_Activity : AppCompatActivity() {
             })
     }
 
+//method used from Google
+//https://developer.android.com/reference/kotlin/androidx/room/Delete
+//Android Developers
 
     private fun deleteAd() {
         Log.d(TAG, "deleteAd: ")

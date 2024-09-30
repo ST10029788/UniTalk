@@ -32,6 +32,9 @@ class AI_Activity : AppCompatActivity() {
         private const val TAG = "AI_TAG"
     }
 
+//method used from Google
+//https://developer.android.com/develop/ui/views/layout/recyclerview
+//Developers
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -129,6 +132,9 @@ class AI_Activity : AppCompatActivity() {
     }
     data class RequestBody(val prompt: String)
 
+//method used from LogRocket
+//https://blog.logrocket.com/ux-design/toast-notifications/
+//Iwalola Sobowale
 
 
     private fun generateContentWithListeners(
@@ -165,7 +171,9 @@ class AI_Activity : AppCompatActivity() {
             }
         }
     }
-
+//method used from YouTube
+//https://youtu.be/L_44KqUcgrg?si=mss-i81H3df37FlI
+//channel: FineGap
 
     private fun showsplash() {
         val dialog =

@@ -21,6 +21,10 @@ class About_Details_Activity : AppCompatActivity() {
         private const val TAG = "ABOUT_DETAIL"
     }
 
+//method was used from Youtube
+//https://youtu.be/4gDAZmLnVZY?si=l5UX8vT-S6vvmtBd
+//channel: The Android Factory
+
     // Lateinit variable to hold the binding for the activity layout
     private lateinit var binding: ActivityAboutDetailBinding
 
@@ -31,6 +35,10 @@ class About_Details_Activity : AppCompatActivity() {
 
         // Inflate the activity layout
         binding = ActivityAboutDetailBinding.inflate(layoutInflater)
+
+        //method was used from Youtube
+        //https://youtu.be/Q7T2U1KgPBI?si=xivZE1_wgpb2cLLG
+        //channel: Learning with Deeksha
 
         // Call the superclass onCreate method
         super.onCreate(savedInstanceState)
@@ -50,6 +58,10 @@ class About_Details_Activity : AppCompatActivity() {
 
         // Get the about type from the intent
         aboutType = intent.getStringExtra("Detail")!!
+
+        //method used from GeeksforGeeks
+        //https://www.geeksforgeeks.org/how-to-create-dynamic-webview-in-android-with-firebase/
+        //GeeksforGeeks
 
         // Enable JavaScript in the web view
         @JavascriptInterface
@@ -140,6 +152,9 @@ class About_Details_Activity : AppCompatActivity() {
             }
 
     }
+    //method was used from YouTube
+    //https://youtu.be/SpsFzmwOQmU?si=LA4vZDXqJsvUvlsy
+    //channel: Mayank Sanghvi
 
     // Method to load the GitHub page
     private fun loadGitHub() {

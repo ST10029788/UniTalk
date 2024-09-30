@@ -53,3 +53,6 @@ class FilterChats : Filter {
     }
 
 }
+//method used from YouTube
+//https://youtu.be/4a3nKOyqDmY?si=M-d5mokUeFO9gm4m
+//channel: The Android Factory

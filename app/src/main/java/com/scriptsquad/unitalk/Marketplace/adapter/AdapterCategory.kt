@@ -66,3 +66,6 @@ class AdapterCategory(
 
 
 }
+//method used from YouTube
+//https://youtu.be/E3x6pCZutLA?si=1oWGscI05SGLuIxL
+//channel: Smartherd

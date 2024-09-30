@@ -16,6 +16,9 @@ import com.scriptsquad.unitalk.ChatRoom.model.ChatRoomModel
 import com.scriptsquad.unitalk.Utilities.Utils
 import com.scriptsquad.unitalk.databinding.RowChatroomBinding
 
+//method used from YouTube
+//https://youtu.be/CR4iAHHlkU0?si=CCaJqHbwPPuAp-pf
+//Learning Code from Basic
 
 class AdapterChatRoom(
     options: FirestoreRecyclerOptions<ChatRoomModel>,
@@ -83,6 +86,10 @@ class AdapterChatRoom(
 
         return ChatRoomViewHolder(binding.root)
     }
+
+//method used from GeeksforGeeks
+//https://www.geeksforgeeks.org/implement-delete-messages-functionality-in-social-media-android-app/
+//GeeksforGeeks
 
     private fun deleteChatDialog(model: ChatRoomModel, holder: AdapterChatRoom.ChatRoomViewHolder) {
         // alert dialog

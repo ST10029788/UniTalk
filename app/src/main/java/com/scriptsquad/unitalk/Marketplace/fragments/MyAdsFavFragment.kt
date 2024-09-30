@@ -136,3 +136,6 @@ class MyAdsFavFragment : Fragment(){
     }
 
 }
+//method used from Shreyas Patil's Blog
+//https://blog.shreyaspatil.dev/update-queries-without-changing-recyclerview-adapter-using-firebaseui-android-32098b3082b2
+//author: Shreyas Patil

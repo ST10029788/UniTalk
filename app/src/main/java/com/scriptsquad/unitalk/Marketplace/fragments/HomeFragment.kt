@@ -126,7 +126,9 @@ class HomeFragment : Fragment() {
         }
 
     }
-
+    //method was used from Firebase Open Source
+    //https://firebaseopensource.com/projects/firebase/geofire-android/
+    //Firebase Open Source
     private val locationPickedActivityResultLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) { result ->
@@ -214,7 +216,9 @@ class HomeFragment : Fragment() {
             }
         })
     }
-
+    //method used from YouTube
+    //https://youtu.be/Gm8OTgpiTjs?si=ScH1z-05Ys00tvRe
+    //channel: College Android Buddy
     private fun calculateDistanceKm(adLatitude: Double, adLongitude: Double): Double {
         Log.d(TAG, "calculateDistanceKm: currentLatitude: $currentLatitude")
         Log.d(TAG, "calculateDistanceKm: currentLongitude: $currentLongitude")

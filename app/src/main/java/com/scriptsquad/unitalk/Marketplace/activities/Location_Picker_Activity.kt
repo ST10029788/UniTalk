@@ -33,7 +33,9 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.scriptsquad.unitalk.R
 import com.scriptsquad.unitalk.Utilities.Utils
 
-
+//method used from YouTube
+//https://youtu.be/pOKPQ8rYe6g?si=twow6tMVVxLM5k1z
+//channel: Picker Soft
 class Location_Picker_Activity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var binding: ActivityLocationPickerBinding
 
@@ -120,7 +122,9 @@ class Location_Picker_Activity : AppCompatActivity(), OnMapReadyCallback {
 
         }
     }
-
+    //method used from MapBox
+    //https://docs.mapbox.com/android/legacy/maps/examples/location-picker/
+    //MapBox docs
     override fun onMapReady(googleMap: GoogleMap) {
 
         Log.d(TAG, "onMapReady:")

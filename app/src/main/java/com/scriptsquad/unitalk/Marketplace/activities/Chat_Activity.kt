@@ -61,6 +61,9 @@ class Chat_Activity : AppCompatActivity() {
         private const val TAG = "CHAT_TAG"
     }
 
+//method used from YouTube
+//https://youtu.be/q6TL2RyysV4?si=2z5opxFHHiR9O1CR
+//Philipp Lackner
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityChatBinding.inflate(layoutInflater)
@@ -113,7 +116,9 @@ class Chat_Activity : AppCompatActivity() {
             override fun onCancelled(error: DatabaseError) {}
         })
     }
-
+//method used from Digital Ocean
+//https://www.digitalocean.com/community/tutorials/android-capture-image-camera-gallery
+//author: Anupam Chugh
 
     private fun imagePickDialog() {
         Log.d(TAG, "imagePickDialog: ")
@@ -185,6 +190,9 @@ class Chat_Activity : AppCompatActivity() {
             Utils.toast(this@Chat_Activity, "Permission denied...")
         }
     }
+//method used from YouTube
+//https://youtu.be/KwyuOgJq1Tw?si=ft2t-R7suwZZ377q
+//channel: The Android Factory
 
     private fun loadReceiptDetails() {
         Log.d(TAG, "loadReceiptDetails: ")
@@ -224,6 +232,9 @@ class Chat_Activity : AppCompatActivity() {
                 }
             })
     }
+//method used from Digital Ocean
+//https://www.digitalocean.com/community/tutorials/android-capture-image-camera-gallery
+//author: Anupam Chugh
 
     private fun loadMessage() {
 
@@ -291,6 +302,9 @@ class Chat_Activity : AppCompatActivity() {
             Utils.toast(this@Chat_Activity, "Canceled...")
         }
     }
+//method used from YouTube
+//https://youtu.be/nOtlFl1aUCw?si=dFodeHMYiNqKVzgH
+//channel: Coding Test
 
     private fun pickImageGallery() {
         Log.d(TAG, "pickImageGallery: ")
@@ -317,6 +331,9 @@ class Chat_Activity : AppCompatActivity() {
             Utils.toast(this@Chat_Activity, "Cancelled...!")
         }
     }
+//method used from YouTube
+//https://youtu.be/DWIGAkYkpg8?si=aYJgqh8hQdGRbcra
+//Android Knowledge
 
     private fun uploadToFirebaseStorage() {
         Log.d(TAG, "uploadToFirebaseStorage: ")
@@ -378,7 +395,9 @@ class Chat_Activity : AppCompatActivity() {
         }
 
     }
-
+//method used from Android.com
+//https://developer.android.com/develop/ui/views/notifications/build-notification
+//Studio Developers
 
     private fun sendMessage(messageType: String, message: String, timestamp: Long) {
         Log.d(TAG, "sendMessage: messsageType: $messageType")
@@ -459,6 +478,9 @@ class Chat_Activity : AppCompatActivity() {
 
 
     }
+//method used from Google
+//https://firebase.google.com/docs/cloud-messaging
+//Firebase
 
     private fun sendFcmNotification(notificationJo: JSONObject) {
 

@@ -116,3 +116,6 @@ class Delete_Account_Activity : AppCompatActivity() {
       
     }
 }
+//method used from YouTube
+//https://youtu.be/bDpTJJJo0Aw?si=HmBT0oHYO0HDkiMq
+//channel: Coding Meet

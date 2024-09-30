@@ -87,6 +87,9 @@ class Chat_Room_Activity : AppCompatActivity() {
 
     }
 
+//method used from YouTube
+//https://youtu.be/jgtxeilPLnI?si=wyZ4HSvI9m_9XIyP
+//channel: Alex Mamo
 
     private fun initChatList() {
 
@@ -116,7 +119,9 @@ class Chat_Room_Activity : AppCompatActivity() {
         chatRoomAdapter.startListening()
 
     }
-
+//method used from YouTube
+//https://youtu.be/0gLr-pBIPhI?si=EfHlUd8kPy94o4FR
+//PedroTech
 
     private fun addMessage() {
         val date = Date()
@@ -179,7 +184,9 @@ class Chat_Room_Activity : AppCompatActivity() {
                 })
         }
     }
-
+//method used from YouTube
+//https://youtu.be/vaKFSUmZ31A?si=-eab9NBtwC4rwwNG
+//Programmer World
 
     private fun openExplorer() {
         if (ActivityCompat.checkSelfPermission(

@@ -212,3 +212,6 @@ class AdapterChats : RecyclerView.Adapter<AdapterChats.HolderChats>,Filterable {
 
 
 }
+//method used from YouTube
+//https://youtu.be/XZZ9fVIzr6I?si=zo4cdjIPEExfUntr
+//channel: The Android Factory
