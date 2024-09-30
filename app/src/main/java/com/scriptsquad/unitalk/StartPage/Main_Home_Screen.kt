@@ -46,7 +46,9 @@ class Main_Home_Screen : AppCompatActivity() {
 
     private var userMode = ""
 
-
+    //method used from YouTube
+    // https://youtu.be/H_maapn4Q3Q?si=_1siEM622Nqtcr-s
+    //channel: TECH_WORLD
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityMainHomeBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
@@ -55,10 +57,6 @@ class Main_Home_Screen : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
 
         showsplash()
-
-
-
-
         getUserName()
         subscribeToTopic()
 
@@ -288,7 +286,9 @@ class Main_Home_Screen : AppCompatActivity() {
         })
     }
 
-
+    //method was from YouTube
+    //https://youtu.be/_9uHFGXLUnk?si=c-lY_lE9ZFsDsiIK
+    //channel: Ravecode Android
     private fun showsplash() {
         val dialog =
             Dialog(this@Main_Home_Screen, android.R.style.Theme_Light_NoTitleBar_Fullscreen)
@@ -364,7 +364,9 @@ class Main_Home_Screen : AppCompatActivity() {
             }
 
     }
-
+    //method used from YouTube
+    //https://youtu.be/vUf0cIRtV8A?si=gMEKH3nHgdLOzsbx
+    //channel: Generic Apps
     private fun askNotificationPermission() {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {

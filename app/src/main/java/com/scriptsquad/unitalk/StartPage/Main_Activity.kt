@@ -12,6 +12,9 @@ import com.scriptsquad.unitalk.databinding.ActivityMainBinding
 import com.scriptsquad.unitalk.Account.AccountFragment
 import com.scriptsquad.unitalk.Marketplace.fragments.ChatsFragment
 import com.scriptsquad.unitalk.Marketplace.fragments.MyAdsFragment
+//method used from YouTube
+//https://youtu.be/DWIGAkYkpg8?si=um9GgnsGWc9G7KAB
+//channel: Android Knowledge
 
 class Main_Activity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -119,7 +122,9 @@ class Main_Activity : AppCompatActivity() {
         fragmentTransaction.replace(binding.fragmentsFl.id, fragment, "ChatFragment")
         fragmentTransaction.commit()
     }
-
+    //method used from YouTube
+    //https://youtu.be/67Xmgqe-wLU?si=sgBeLP6mUaXJxbj7
+    //channel: Coder
     private fun showMyAdsFragment() {
         binding.toolbarTitleTv.text = getString(R.string.my_ads)
         val fragment = MyAdsFragment()

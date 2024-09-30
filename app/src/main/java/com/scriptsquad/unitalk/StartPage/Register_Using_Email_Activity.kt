@@ -14,6 +14,10 @@ import com.scriptsquad.unitalk.databinding.ActivityRegisterEmailBinding
 import www.sanju.motiontoast.MotionToast
 import www.sanju.motiontoast.MotionToastStyle
 
+//method used from YouTube
+//https://youtu.be/tbh9YaWPKKs?si=qh4THfrN5JV7ZaHL
+//SmallAcademy
+
 class Register_Using_Email_Activity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterEmailBinding
     private lateinit var firebaseAuth: FirebaseAuth
@@ -148,3 +152,6 @@ class Register_Using_Email_Activity : AppCompatActivity() {
             }
     }
 }
+//method used from YouTube
+//https://youtu.be/TwHmrZxiPA8?si=KL-4IHmyOM0_qlol
+//SmallAcademy

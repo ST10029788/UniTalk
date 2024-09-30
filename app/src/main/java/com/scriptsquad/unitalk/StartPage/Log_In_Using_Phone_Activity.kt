@@ -19,6 +19,9 @@ import com.scriptsquad.unitalk.Utilities.Utils
 import com.scriptsquad.unitalk.databinding.ActivityLoginPhoneBinding
 import java.util.concurrent.TimeUnit
 
+//method used from YouTube
+//https://youtu.be/H_maapn4Q3Q?si=_1siEM622Nqtcr-s
+//channel: TECH_WORLD
 class Log_In_Using_Phone_Activity : AppCompatActivity() {
 
     private lateinit var binding:ActivityLoginPhoneBinding
@@ -106,7 +109,9 @@ phoneCode=binding.phoneCodeTil.selectedCountryCodeWithPlus
 
 
     }
-
+    //method used from YouTube
+    //https://youtu.be/3V3W3HjYzog?si=T4VIT3OJocWrVyEM
+    //channel: Papaya Coders
     private fun startPhoneNumberVerification(){
         Log.d(TAG,"startPhoneNumberVerification: ")
         progressDialog.setTitle("Sending OTP to $phoneNumberWithCode")
@@ -180,7 +185,9 @@ phoneCode=binding.phoneCodeTil.selectedCountryCodeWithPlus
     private fun signInWithPhoneCredential(credential: PhoneAuthCredential) {
 
     }
-
+    //method used from YouTube
+    //https://youtu.be/dI8mMpL8dmo?si=N-bqVQNRbhx8OPQX
+    //channel: Chirag Kachhadiya
   private fun verifyPhoneNumberWithCode(verificationId: String?, otp: String) {
       Log.d(TAG,"verifyPhoneNumberWithCode: verificationId: $verificationId")
       Log.d(TAG,"verifyPhoneNumberWithCode: OTP: $otp")
@@ -234,7 +241,9 @@ phoneCode=binding.phoneCodeTil.selectedCountryCodeWithPlus
             }
     }
 
-
+    //method used from YouTube
+    //https://youtu.be/DWIGAkYkpg8?si=um9GgnsGWc9G7KAB
+    //channel: Android Knowledge
     private fun UpdateUserInfoDb(){
         Log.d(TAG,"updateUserInfoDb")
         progressDialog.setMessage("Saving user Info")

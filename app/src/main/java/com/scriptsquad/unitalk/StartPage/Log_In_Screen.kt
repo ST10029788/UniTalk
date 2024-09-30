@@ -18,6 +18,9 @@ import com.scriptsquad.unitalk.Utilities.Utils
 import com.scriptsquad.unitalk.databinding.ActivityLogInBinding
 import java.lang.Exception
 
+//method used from YouTube
+//https://youtu.be/H_maapn4Q3Q?si=_1siEM622Nqtcr-s
+//channel: TECH_WORLD
 class Log_In_Screen : AppCompatActivity() {
 
     private companion object {
@@ -74,7 +77,9 @@ class Log_In_Screen : AppCompatActivity() {
 
     }
 
-
+    //method used from YouTube
+    //https://youtu.be/KJ3ChWp0Qd0?si=IVsBM_mGkUYfSmAF
+    //channel: Coding Meet
     private fun createDefaultAdminAccount() {
         val email = "admin@varsitycollege.co.za"
         val password = "admin123"
@@ -154,7 +159,9 @@ class Log_In_Screen : AppCompatActivity() {
         }
 
     }
-
+    //method used from YouTube
+    //https://youtu.be/pP7quzFmWBY?si=WfuxedAC0XF6HfuF
+    //channel: Firebase
     private fun firebaseAuthWithGoogleAccount(idToken: String?) {
         Log.d(TAG, "firebaseAuthWithGoogleAccount: idToken : $idToken")
 

@@ -95,3 +95,6 @@ class Log_In_Using_Email_Activity : AppCompatActivity() {
     }
 
 }
+//method used from YouTube
+//https://youtu.be/hcEqX5lcuUc?si=am4dOV8R-L12w0Hk
+//channel: Code With Arvind
