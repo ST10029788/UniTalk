@@ -20,6 +20,7 @@ import java.io.FileOutputStream
 
 class Download_Video_Activity : AppCompatActivity() {
 
+    // Late-initialized variables for the activity's binding and progress dialog
     private lateinit var binding: ActivityDownloadBinding
 
     private lateinit var progressDialog:ProgressDialog
@@ -42,6 +43,7 @@ class Download_Video_Activity : AppCompatActivity() {
             insets
         }
 
+        // Get the video URL from the intent
        videoUrl = intent.getStringExtra("videoUrl")!!
 
         progressDialog = ProgressDialog(this)
@@ -59,6 +61,7 @@ class Download_Video_Activity : AppCompatActivity() {
 
     }
 
+    // Download the video
     private fun download(){
         if (ContextCompat.checkSelfPermission(
                 this,
@@ -73,6 +76,7 @@ class Download_Video_Activity : AppCompatActivity() {
         }
     }
 
+    // Register for the storage permission result
     private val requestStoragePermissionLauncher =
         registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted: Boolean ->
             //lets check if granted or not
@@ -85,6 +89,7 @@ class Download_Video_Activity : AppCompatActivity() {
             }
         }
 
+    // Download the video from Firebase Storage URL
     private fun downloadVideo(videoUrl: String) {
         Log.d(TAG, "downloadVideo: Downloading Video")
         //progress bar
@@ -105,6 +110,7 @@ class Download_Video_Activity : AppCompatActivity() {
             }
     }
 
+    // Save the video to the downloads folder
     private fun saveToDownloadsFolder(bytes: ByteArray) {
         Log.d(TAG, "saveToDownloadsFolder: Saving downloaded video")
 
