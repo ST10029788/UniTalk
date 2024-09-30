@@ -1,4 +1,5 @@
-[Admin Dashboard Dark Mode.zip](https://github.com/user-attachments/files/17193980/Admin.Dashboard.Dark.Mode.zip)# UniTalk: Your VC Studies Companion
+Video Demonstrations: https://drive.google.com/drive/folders/1slJdthD7YTVH6XwCwGNl7oal0xD5uwKH?usp=sharing
+# UniTalk: Your VC Studies Companion
 This Android Application, created as part of the OPSC7312 module, is designed to enhance your college experience by integrating essential academic and social features into a single platform. Whether you’re studying for exams, connecting with peers, or keeping up with campus news, UniTalk has got you covered.
 
 ## Table of Contents
@@ -49,8 +50,9 @@ This Android Application, created as part of the OPSC7312 module, is designed to
 
  9. **AI Assistant**: 
    Provides academic support by answering student questions.
+Uses a REST API
 
-10. **Easy Information Access via Tiled Dashboard**: 
+11. **Easy Information Access via Tiled Dashboard**: 
    - A visually distinct dashboard organizes key features for quick access. Sections are clearly labeled with icons to aid accessibility, including for neurodivergent individuals and non-technically inclined users.
 
 11. **Admin Features**:
@@ -166,7 +168,7 @@ A Video presentation, ReadMe file and Part 1 Research is provided in this reposi
 
 ## Video Presentation
 [Admin Dashboard Dark Mode.zip](https://github.com/user-attachments/files/17193981/Admin.Dashboard.Dark.Mode.zip)
-Google drive like to both videos of Application Demonstration: https://drive.google.com/drive/folders/1slJdthD7YTVH6XwCwGNl7oal0xD5uwKH?usp=sharing
+Google drive link to both videos of Application Demonstration: https://drive.google.com/drive/folders/1slJdthD7YTVH6XwCwGNl7oal0xD5uwKH?usp=sharing
 
 ## Screenshots
 ### Student Features
