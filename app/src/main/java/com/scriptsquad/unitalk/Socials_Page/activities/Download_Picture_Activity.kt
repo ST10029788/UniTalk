@@ -20,6 +20,7 @@ import java.io.FileOutputStream
 
 class Download_Picture_Activity : AppCompatActivity() {
 
+    // Late-initialized variables for the activity's binding and progress dialog
     private lateinit var binding: ActivityDownloadPictureBinding
 
     private lateinit var progressDialog: ProgressDialog
@@ -43,7 +44,7 @@ class Download_Picture_Activity : AppCompatActivity() {
             insets
         }
 
-
+        // Get the image URL from the intent
         imageUrl = intent.getStringExtra("imageUrl")!!
 
         progressDialog = ProgressDialog(this)
@@ -59,7 +60,7 @@ class Download_Picture_Activity : AppCompatActivity() {
         download()
 
     }
-
+    // Download the image
     private fun download(){
         if (ContextCompat.checkSelfPermission(
                 this,
@@ -73,7 +74,7 @@ class Download_Picture_Activity : AppCompatActivity() {
             requestStoragePermissionLauncher.launch(Manifest.permission.WRITE_EXTERNAL_STORAGE)
         }
     }
-
+    // Register for the storage permission result
     private val requestStoragePermissionLauncher =
         registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted: Boolean ->
             //lets check if granted or not
@@ -85,7 +86,7 @@ class Download_Picture_Activity : AppCompatActivity() {
 
             }
         }
-
+    // Download the picture from Firebase storage
     private fun downloadPicture() {
         Log.d(TAG, "downloadLectures: Downloading Assignment")
         //progress bar
@@ -107,7 +108,7 @@ class Download_Picture_Activity : AppCompatActivity() {
             }
 
     }
-
+    // Save the picture to the downloads folder
     private fun saveToDownloadsFolder(bytes: ByteArray?) {
         Log.d(TAG, "saveToDownloadsFolder: saving downloaded book")
 

@@ -30,18 +30,20 @@ import com.scriptsquad.unitalk.databinding.ActivityAddPicturesBinding
 import www.sanju.motiontoast.MotionToast
 import www.sanju.motiontoast.MotionToastStyle
 import java.io.ByteArrayOutputStream
-
+// Class representing the add picture activity
 class Add_Picture_Activity : AppCompatActivity() {
-
+    // Late-initialized variables for the activity's binding, Firebase authentication, and progress dialog
     private lateinit var binding: ActivityAddPicturesBinding
 
     private lateinit var firebaseAuth: FirebaseAuth
 
+    // Variable to store the image URI
     private var imageUri: Uri? = null
 
     private lateinit var progressDialog: ProgressDialog
 
     private companion object {
+        // Companion object to hold the TAG for logging
         private const val TAG = "ADD_PICTURES_TAG"
     }
 
@@ -52,12 +54,13 @@ class Add_Picture_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
+        // Set up the edge-to-edge display
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+        // Initialize the progress dialog
         progressDialog = ProgressDialog(this)
         progressDialog.setCanceledOnTouchOutside(false)
         progressDialog.setMessage("Please Wait...")
@@ -95,11 +98,11 @@ class Add_Picture_Activity : AppCompatActivity() {
 
     }
 
+    // Variables to store the title and upload image URL
     private var titlePic = ""
     private var uploadImageUrl = ""
 
-
-
+    // Validate the data before uploading
     private fun validateData() {
 
         titlePic = binding.titleEt.text.toString()
@@ -122,7 +125,7 @@ class Add_Picture_Activity : AppCompatActivity() {
         }
 
     }
-
+    // Upload the image to Firebase storage
     private fun uploadImageToStorage() {
         Log.d(TAG, "uploadPdfToStorage: uploading to storage....")
 
