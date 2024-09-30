@@ -8,6 +8,7 @@ import com.scriptsquad.unitalk.Socials_Page.fragments.VideoFragment
 
 class Socials_Gallery_Activity : AppCompatActivity() {
 
+    // Late-initialized variable for the activity's binding
     private lateinit var binding: ActivityGalleryBinding
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -31,6 +32,7 @@ class Socials_Gallery_Activity : AppCompatActivity() {
 
     }
 
+    // Show the pictures fragment
     private fun showPicturesFragment() {
         val fragment = PictureFragment()
         val fragmentTransaction = supportFragmentManager.beginTransaction()
@@ -38,6 +40,7 @@ class Socials_Gallery_Activity : AppCompatActivity() {
         fragmentTransaction.commit()
     }
 
+    // Show the video fragment
     private fun showVideoFragment() {
         val fragment = VideoFragment()
         val fragmentTransaction = supportFragmentManager.beginTransaction()
