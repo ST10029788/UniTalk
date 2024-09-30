@@ -62,3 +62,6 @@ class Forgot_Password_Activity : AppCompatActivity() {
         }
     }
 }
+//method used from YouTube
+//https://youtu.be/3AFGljftCzo?si=pqkvHOE98Kk2p7y8
+//channel: Android Mate

@@ -26,6 +26,10 @@ import com.scriptsquad.unitalk.Utilities.Utils
 import com.scriptsquad.unitalk.databinding.ActivityProfileEditBinding
 import java.io.ByteArrayOutputStream
 
+//method used from YouTube
+//https://youtu.be/-dqPdUQPxlQ?si=a2Q2EEMCVWiyYN0r
+//channel: SmallAcademy
+
 class Edit_Profile_Activity : AppCompatActivity() {
     private lateinit var binding: ActivityProfileEditBinding
 
@@ -68,6 +72,10 @@ class Edit_Profile_Activity : AppCompatActivity() {
     private var email = ""
     private var phoneCode = ""
     private var phoneNumber = ""
+
+    //method used from Android.com
+    //https://developer.android.com/training/permissions/requesting
+    //Android Developers
 
     private fun validateData() {
         name = binding.nameEt.text.toString().trim()
@@ -222,6 +230,9 @@ class Edit_Profile_Activity : AppCompatActivity() {
                 }
             })
     }
+//method used from Digital Ocean
+//https://www.digitalocean.com/community/tutorials/android-capture-image-camera-gallery
+//author: Anupam Chugh
 
     private fun imagePickDialog() {
         val popupMenu = PopupMenu(this@Edit_Profile_Activity, binding.profileImagePickFab)
@@ -299,6 +310,9 @@ class Edit_Profile_Activity : AppCompatActivity() {
 
 
         }
+    //method used from YouTube
+    //https://youtu.be/nOtlFl1aUCw?si=dFodeHMYiNqKVzgH
+    //channel: Coding Test
 
     private fun pickImageCamera() {
         Log.d(TAG, "pickImageCamera: ")

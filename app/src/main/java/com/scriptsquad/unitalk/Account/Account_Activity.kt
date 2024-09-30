@@ -18,6 +18,10 @@ import com.scriptsquad.unitalk.StartPage.Log_In_Screen
 import com.scriptsquad.unitalk.R
 import com.scriptsquad.unitalk.Utilities.Utils
 
+//method used from YouTube
+//https://youtu.be/ymnKQVLs93c?si=vBY97O9HyEG277Pp
+//channel: Philipp Lackner
+
 class Account_Activity : AppCompatActivity() {
     private lateinit var binding:ActivityAccountBinding
     private lateinit var firebaseAuth: FirebaseAuth
@@ -65,6 +69,9 @@ class Account_Activity : AppCompatActivity() {
             onBackPressedDispatcher.onBackPressed()
         }
 
+        //method used from Google
+        //https://firebase.google.com/docs/auth/web/password-auth
+        //Firebase
 
         loadMyInfo()
 
@@ -92,6 +99,9 @@ class Account_Activity : AppCompatActivity() {
 
     }
 
+    //method used from YouTube
+    //https://youtu.be/GZnCHLEo6ng?si=gq68FKihAFGVrpPi
+    //channel: Mohsen Mashkour
 
     private fun loadMyInfo() {
 
@@ -167,6 +177,9 @@ class Account_Activity : AppCompatActivity() {
 
 
     }
+    //method used from YouTube
+    //https://youtu.be/Wf7DDIaRYjk?si=aZNObTBh1DGau2k-
+    //channel: SmallAcademy
 
     private fun verifyAccount() {
         Log.d(TAG, "verifying Account: ")

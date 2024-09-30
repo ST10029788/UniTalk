@@ -53,6 +53,9 @@ class AccountFragment : Fragment() {
         progressDialog.setCanceledOnTouchOutside(false)
 
 
+        //method used from YouTube
+        //https://youtu.be/ymnKQVLs93c?si=vBY97O9HyEG277Pp
+        //channel: Philipp Lackner
 
         loadMyInfo()
 
@@ -77,6 +80,9 @@ class AccountFragment : Fragment() {
 
 
     }
+    //method used from YouTube
+    //https://youtu.be/wm626abfMM8?si=4SwT5BQTxreDRS0l
+    //channel: Firebase
 
     private fun loadMyInfo() {
 
@@ -149,6 +155,9 @@ class AccountFragment : Fragment() {
 
 
     }
+//method used from GeeksforGeeks
+//https://geeksforgeeks.org/how-to-add-user-registration-with-email-verification-in-android/
+//GeeksforGeeks
 
     private fun verifyAccount() {
         Log.d(TAG, "verifying Account: ")
