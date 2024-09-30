@@ -52,6 +52,10 @@ class Create_Ad_Activity : AppCompatActivity() {
     private var isEditMode = false
     private var adIdForEditing = ""
 
+//method used from YouTube
+//https://youtu.be/KwyuOgJq1Tw?si=ft2t-R7suwZZ377q
+//channel: The Android Factory
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAdCreateBinding.inflate(layoutInflater)
@@ -117,6 +121,9 @@ class Create_Ad_Activity : AppCompatActivity() {
         }
 
     }
+//method used from YouTube
+//https://youtu.be/8g2bwNZ5qTs?si=5L2uDxIYTyjFIrJk
+//channel: Tech Mirrors
 
     private val locationPickerActivityResultLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -159,6 +166,9 @@ class Create_Ad_Activity : AppCompatActivity() {
             AdapterImagePicked(this@Create_Ad_Activity, imagePickedArrayList, adIdForEditing)
         binding.imagesRv.adapter = adapterImagePicked
     }
+//method used from Digital Ocean
+//https://www.digitalocean.com/community/tutorials/android-capture-image-camera-gallery
+//author: Anupam Chugh
 
     private fun showImagePickOptions() {
         Log.d(TAG, "showImagePickOptions: ")
@@ -200,6 +210,9 @@ class Create_Ad_Activity : AppCompatActivity() {
             true
         }
     }
+//method used from Android.com
+//https://developer.android.com/training/permissions/requesting
+//Android Developers
 
     private val requestStoragePermission = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
@@ -233,6 +246,9 @@ class Create_Ad_Activity : AppCompatActivity() {
         }
 
     }
+//method used from YouTube
+//https://youtu.be/nOtlFl1aUCw?si=dFodeHMYiNqKVzgH
+//channel: Coding Test
 
     private fun pickImageGallery() {
         Log.d(TAG, "pickImageGallery:")
@@ -284,6 +300,9 @@ class Create_Ad_Activity : AppCompatActivity() {
         }
 // Check if image is picked or not
     }
+//method used from YouTube
+//https://youtu.be/f2odwvwRTKo?si=9fTLKcxrr_EQfXtr
+//channel: MSCode009
 
     private val cameraActivityResultLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
@@ -314,6 +333,9 @@ class Create_Ad_Activity : AppCompatActivity() {
     private var latitude = 0.0
     private var longitude = 0.0
 
+//method used from YouTube
+//https://youtu.be/DWIGAkYkpg8?si=aYJgqh8hQdGRbcra
+//Android Knowledge
 
     private fun validateData() {
         Log.d(TAG, "validateData: ")
@@ -356,6 +378,9 @@ class Create_Ad_Activity : AppCompatActivity() {
         }
 
     }
+//method used from YouTube
+//https://youtu.be/NXuXbXN1llY?si=mIIh5l54vBvZi5Wb
+//channel: Coding Meet
 
     private fun postAd() {
         Log.d(TAG, "postAd: ")
@@ -400,6 +425,9 @@ class Create_Ad_Activity : AppCompatActivity() {
                 Utils.toast(this, "Failed due to ${e.message}")
             }
     }
+//method used from YouTube
+//https://youtu.be/5j5EyjKWWK4?si=VXAv8ltE9wq4O3np
+//channel: Learnwithoutpay
 
     private fun updateAd() {
         Log.d(TAG, "updateAd:")
@@ -520,6 +548,9 @@ class Create_Ad_Activity : AppCompatActivity() {
 
 
     }
+//method used from YouTube
+//https://youtu.be/_-vDIK3slU4?si=Ud9vhoZFhKpGPPTu
+//channel: CodeAndroid
 
     private fun loadAdDetails() {
         Log.d(TAG, "loadAdDetails: ")

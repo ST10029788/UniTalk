@@ -148,3 +148,6 @@ class ChatsFragment : Fragment() {
     }
 
 }
+//method was used from YouTube
+//https://youtu.be/OlfHlM3Lvf8?si=wqr9VYeqoDW8OvVs
+//channel: Learnonset - Learning Coding Online

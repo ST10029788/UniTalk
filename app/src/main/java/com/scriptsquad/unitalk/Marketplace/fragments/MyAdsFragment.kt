@@ -88,3 +88,6 @@ class MyAdsFragment : Fragment() {
     }
 
 }
+//method used from YouTube
+//https://youtu.be/uI2n6abpe9Q?si=kVqQonJWfnSDk-Tu
+//channel: Etcetera

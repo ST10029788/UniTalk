@@ -70,7 +70,7 @@ class AdapterImageSlider :Adapter<AdapterImageSlider.HolderImageSlider>{
         var imageCountTv:TextView = binding.imageCountTV
     }
 
-
-
-
 }
+//the method was used from YouTube
+//https://youtu.be/YU5nHhauyno?si=8fA8mjiiikMChBvR
+//channel: TheLazyDev

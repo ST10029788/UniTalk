@@ -203,3 +203,6 @@ class AdapterAd : RecyclerView.Adapter<AdapterAd.HolderAd>, Filterable {
 
 
 }
+//method used from YouTube
+//https://youtu.be/UbP8E6I91NA?si=zU4GcRE-rtUB9Y88
+//channel: Foxandroid

@@ -114,3 +114,6 @@ class Ad_Seller_Profile_Activity : AppCompatActivity() {
 
     }
 }
+//method used from YouTube
+//https://youtu.be/mNKQ9dc1knI?si=Zl5SD0u9dZ3kjbey
+//Philipp Lackner

@@ -116,3 +116,6 @@ class AdapterChat(private val context: Context, private val charArrayList: Array
 
 
 }
+//method used from YouTube
+//https://youtu.be/DW-d0kalMvU?si=d52zJ123ODk_qr4j
+//channel: Coding Zest

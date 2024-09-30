@@ -57,3 +57,6 @@ adapter.adArrayList = results.values as ArrayList<ModelAd>
 
 
 }
+//method was used from YouTube
+//https://youtu.be/Njlftq0LhvI?si=lG0vlQtHX68-401_
+//channel: Build with Kotlin

@@ -123,3 +123,6 @@ class AdapterImagePicked(
 
 
 }
+//method used from YouTube
+//https://youtu.be/_eTZowmape8?si=XS0doYtTVvkUd87g
+//channel: Mohsen Mashkour
