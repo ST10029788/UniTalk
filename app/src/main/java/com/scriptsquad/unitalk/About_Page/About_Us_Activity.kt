@@ -10,6 +10,10 @@ import com.bumptech.glide.Glide
 import com.scriptsquad.unitalk.R
 import com.scriptsquad.unitalk.databinding.ActivityAboutUsBinding
 
+//method was used from Youtube
+//https://youtu.be/4gDAZmLnVZY?si=l5UX8vT-S6vvmtBd
+//channel: The Android Factory
+
 // This is an Activity class that inherits from AppCompatActivity
 class About_Us_Activity : AppCompatActivity() {
 
@@ -83,6 +87,9 @@ class About_Us_Activity : AppCompatActivity() {
         loadImages()
 
     }
+    //method used from YouTube
+    //https://youtu.be/Y_nR4kZzw-w?si=6Daedfy1MpwlDIfE
+    //channel: Foxandroid
 
     // Method to send an email using Gmail
     private fun gmailSender() {
@@ -113,6 +120,9 @@ class About_Us_Activity : AppCompatActivity() {
 
 
     }
+//method used from YouTube
+//https://youtu.be/0jZ0orxoIlc?si=sXiieQKroHdi_w8z
+//channel: KB CODER
 
     // Method to open WhatsApp
     private fun openWhatsApp() {
