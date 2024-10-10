@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.biometric.BiometricPrompt
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -22,6 +23,9 @@ import java.lang.Exception
 //https://youtu.be/H_maapn4Q3Q?si=_1siEM622Nqtcr-s
 //channel: TECH_WORLD
 class Log_In_Screen : AppCompatActivity() {
+
+    private lateinit var biometricPrompt: BiometricPrompt
+    private lateinit var promptInfo: BiometricPrompt.PromptInfo
 
     private companion object {
         private const val TAG = "LOGIN_OPTIONS_TAG"

@@ -11,7 +11,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="512dp"
+        android:layout_height="588dp"
         android:layout_centerInParent="true"
         android:contentDescription="@string/Scroll_view_LogIn"
         android:padding="10dp">
@@ -76,6 +76,22 @@
                 android:layout_marginTop="8dp"
                 android:shadowColor="#604D4D"
                 android:text="Log In with Email"
+                android:textColor="@color/light_mode_text"
+                android:textColorLink="@color/light_mode_text"
+                android:textStyle="bold"
+                app:backgroundTint="@color/light_mode_light_accent"
+                app:iconTint="@color/light_mode_light_accent"
+                app:rippleColor="@color/light_mode_accent"
+                app:strokeColor="@color/light_mode_text" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/LogInBiometricBtn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:shadowColor="#604D4D"
+                android:text="Log In with biometrics"
                 android:textColor="@color/light_mode_text"
                 android:textColorLink="@color/light_mode_text"
                 android:textStyle="bold"
