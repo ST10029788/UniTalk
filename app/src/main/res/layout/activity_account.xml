@@ -81,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Email"
+                android:text="@string/email"
                 android:textStyle="bold" />
 
             <TextView
@@ -91,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp"
-                android:text="example@gmail.com" />
+                android:text="@string/example_gmail_com" />
 
             <TextView
                 android:id="@+id/phoneLabelTv"
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/emailLabelTv"
                 android:layout_marginTop="10dp"
-                android:text="Phone"
+                android:text="@string/phone"
                 android:textStyle="bold" />
 
 
@@ -112,7 +112,7 @@
                 android:layout_below="@id/emailLabelTv"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp"
-                android:text="+27 84 687 090" />
+                android:text="@string/_27_84_687_090" />
 
             <TextView
                 android:id="@+id/dobLabelTv"
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/phoneLabelTv"
                 android:layout_marginTop="10dp"
-                android:text="DOB"
+                android:text="@string/dob"
                 android:textStyle="bold" />
 
             <TextView
@@ -132,7 +132,7 @@
                 android:layout_below="@id/phoneLabelTv"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp"
-                android:text="dd/MM/yyyy" />
+                android:text="@string/dd_mm_yyyy" />
 
             <TextView
                 android:id="@+id/memberSinceLabelTv"
@@ -141,7 +141,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/dobLabelTv"
                 android:layout_marginTop="10dp"
-                android:text="Member since"
+                android:text="@string/member_since"
                 android:textStyle="bold" />
 
             <TextView
@@ -152,7 +152,7 @@
                 android:layout_below="@id/dobLabelTv"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp"
-                android:text="dd/MM/yyyy" />
+                android:text="@string/dd_mm_yyyy" />
 
 
             <TextView
@@ -162,7 +162,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/memberSinceLabelTv"
                 android:layout_marginTop="10dp"
-                android:text="Account Status"
+                android:text="@string/account_status"
                 android:textStyle="bold" />
 
             <TextView
@@ -173,7 +173,7 @@
                 android:layout_below="@id/memberSinceLabelTv"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp"
-                android:text="Not Verified" />
+                android:text="@string/not_verified" />
 
             <LinearLayout
                 android:layout_width="402dp"
@@ -186,7 +186,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:text="Preferences"
+                    android:text="@string/preferences"
                     android:textStyle="bold" />
 
                 <androidx.cardview.widget.CardView
@@ -208,7 +208,7 @@
                         android:drawableEnd="@drawable/ic_next_gray"
                         android:drawablePadding="10dp"
                         android:gravity="center_vertical"
-                        android:text="Logout"
+                        android:text="@string/logout"
                         android:textColor="#7D5260"
                         android:textStyle="bold" />
 
@@ -233,7 +233,7 @@
                         android:drawableStart="@drawable/ic_person_gray"
                         android:drawableEnd="@drawable/ic_next_gray"
                         android:drawablePadding="10dp"
-                        android:text="Edit Profile"
+                        android:text="@string/edit_profile"
                         android:textColor="#7D5260"
                         android:textStyle="bold" />
 
@@ -258,7 +258,7 @@
                         android:drawableStart="@drawable/ic_lock_gray"
                         android:drawableEnd="@drawable/ic_next_gray"
                         android:drawablePadding="10dp"
-                        android:text="Change Password"
+                        android:text="@string/change_password"
                         android:textColor="#7D5260"
                         android:textStyle="bold" />
 
@@ -284,7 +284,7 @@
                         android:drawableStart="@drawable/ic_verify_gray"
                         android:drawableEnd="@drawable/ic_next_gray"
                         android:drawablePadding="10dp"
-                        android:text="Verify Account"
+                        android:text="@string/verify_account"
                         android:textColor="#7D5260"
                         android:textStyle="bold" />
 
@@ -309,7 +309,7 @@
                         android:drawableStart="@drawable/ic_block_gray"
                         android:drawableEnd="@drawable/ic_next_gray"
                         android:drawablePadding="10dp"
-                        android:text="Delete Account"
+                        android:text="@string/delete_account"
                         android:textColor="#7D5260"
                         android:textStyle="bold" />
 
@@ -322,7 +322,7 @@
                     android:layout_height="43dp"
                     android:layout_gravity="bottom"
                     android:gravity="bottom"
-                    android:text="Dark Mode"
+                    android:text="@string/dark_mode"
                     android:textColor="@color/light_mode_text" />
 
 
