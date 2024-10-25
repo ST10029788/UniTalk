@@ -100,4 +100,7 @@
     <string name="map">Map</string>
     <string name="seller_profile">Seller Profile</string>
     <string name="published_ads">Published Ads:</string>
+    <string name="add_a_new_category">Add a new Category</string>
+    <string name="category_title">Category Title</string>
+    <string name="submit">Submit</string>
 </resources>

@@ -38,7 +38,7 @@
             android:layout_marginTop="18dp"
             android:fontFamily="sans-serif-condensed"
             android:scrollbarSize="28sp"
-            android:text="Add a new Category"
+            android:text="@string/add_a_new_category"
             android:textColor="@color/white"
             android:textSize="22sp" />
 
@@ -64,7 +64,7 @@
             android:drawableTint="@color/colorGray01"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:drawablePadding="10dp"
-            android:hint="Category Title"
+            android:hint="@string/category_title"
             android:inputType="textPersonName|textCapSentences"
             android:padding="10dp"
             android:textColorHint="@color/colorGray01"/>
@@ -81,7 +81,7 @@
         android:layout_marginEnd="30dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/shape_button01"
-        android:text="Submit"
+        android:text="@string/submit"
         android:textColor="@color/white"/>
 
 
