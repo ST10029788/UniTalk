@@ -1,6 +1,11 @@
 Video Demonstrations: https://drive.google.com/drive/folders/1slJdthD7YTVH6XwCwGNl7oal0xD5uwKH?usp=sharing
 # UniTalk: Your VC Studies Companion
 This Android Application, created as part of the OPSC7312 module, is designed to enhance your college experience by integrating essential academic and social features into a single platform. Whether you’re studying for exams, connecting with peers, or keeping up with campus news, UniTalk has got you covered.
+# UniTalk: Your VC Studies Companion
+
+UniTalk is an Android application created as part of the OPSC7312 module. It is designed to enhance the college experience by integrating essential academic and social features into a single platform. Whether you’re studying for exams, connecting with peers, or keeping up with campus news, UniTalk has got you covered.
+
+---
 
 ## Table of Contents
 1. [Features](#features)
@@ -15,62 +20,96 @@ This Android Application, created as part of the OPSC7312 module, is designed to
 10. [License](#license)
 11. [Developer Details](#developer-details)
 
+---
+
 ## Features
 
-1. **Socials Page**: 
-   - Users can upload and download images and videos.
-   - A gallery featuring images from Varsity College’s social events and activities.
-   - Comment on media shared by others, creating a social environment for students to engage with each other.
-   
-2. **Marketplace**:
-   - View ads within a 60km radius for items such as textbooks, laptops, and electronics.
-   - Upload, edit, or delete personal ads.
-   - Users can favorite ads and chat with the poster to discuss further details about the listings.
-   - A platform for students to buy and sell textbooks and other educational materials, with in-app communication for easy negotiations between buyers and sellers.
-   
-3. **Media Features**:
-   - Browse and view uploaded college materials, such as student notes, papers, and tests.
-   - Provides an easy-to-access repository of educational content.
-   
-4. **Notice Board**:
-   - Admins can post updates, and users will receive a push notification to inform them of new content.
-   
-5. **Chatroom Communication**:
-   - Chat with other users in real-time.
-   - Share pictures within the chatroom, enhancing the communication experience.
-   - A dedicated chatroom for discussions related to university life, coursework, and more. Users can also share media within the chat.
-   
-6. **Quick Access to YouTube Lectures**:
-   - Easily access YouTube educational videos relevant to your coursework.
+### Updates to the App
 
-8. **Role-based Access**:
-   - Student users can access features like Socials, Marketplace, Media, and Chatroom.
-   - Admin users have permissions to upload media content and notices.
-   - Email domains such as `@varsitycollege.co.za`, `@iie.ac.za`, and `@vcconnect.edu.za` are required for registration.
+The latest UniTalk updates improve user experience with new features in account management, marketplace functionality, and multi-language support.
 
- 9. **AI Assistant**: 
-   Provides academic support by answering student questions.
-Uses a REST API
+1. **Sign in/Login**
+   - **Biometric Authentication**: Users can use fingerprint or face recognition for secure and convenient login.
+   - **Google Sign-In**: Google sign-in is now available.
+   - **Password Recovery**: Users can reset their password by receiving a reset email (use a student email for testing).
 
-11. **Easy Information Access via Tiled Dashboard**: 
-   - A visually distinct dashboard organizes key features for quick access. Sections are clearly labeled with icons to aid accessibility, including for neurodivergent individuals and non-technically inclined users.
+2. **Account Management**
+   - Users can update their phone number and date of birth.
+   - Phone numbers are now accessible through marketplace listings for calls or SMS.
 
-11. **Admin Features**:
-   - Admin users can create, publish, and delete notices.
-   - Admins can upload student materials and manage educational content.
+3. **Marketplace**
+   - **Advert Uploads**: Users can upload listings with details, images, and prices.
+   - **Favorites**: Save preferred listings for future reference.
+   - **Communication Options**: Use in-app chat, calls, or SMS for interactions about listings.
 
-12. **Account Management**:
-   - Users can manage their profiles, edit their details, verify their student status, and delete their accounts if necessary.
+4. **Language Support**
+   - The app adapts to the device’s language settings automatically.
 
-13. **About Us**:
-   - Provides information about the app developers and the project.
+---
 
-14. **Settings**:
-   - Users can personalize their experience by switching between dark and light themes, changing their password, verifying their account and managing other preferences.
+### Feature Overview
 
-15. **Log Out**:
-   - Users can log out securely, and will be redirected to the login screen for added security.
+1. **Socials Page**  
+   Users can upload and download images and videos, view a gallery of social events, and comment on media.
 
+2. **Marketplace**
+   - View ads within a 60km radius for textbooks, electronics, and more.
+   - Upload, edit, and delete ads.
+   - Favorite ads and chat with sellers directly.
+
+3. **Media Features**
+   - Browse uploaded materials like notes and past papers in a centralized repository.
+
+4. **Notice Board**
+   - Admins can post updates, and users receive push notifications for new content.
+
+5. **Chatroom Communication**
+   - Chat with peers, share media, and discuss campus life or coursework.
+
+6. **Quick Access to YouTube Lectures**
+   - Access educational YouTube videos related to coursework.
+
+7. **Role-Based Access**
+   - Student users access features like Socials, Marketplace, and Chatroom.
+   - Admins manage uploads and notices. Registration is limited to specific email domains.
+
+8. **AI Assistant**
+   - Supports students academically by answering queries (via REST API).
+
+9. **Accessible Dashboard**
+   - A visually distinct tiled dashboard improves usability for all, including neurodivergent users.
+
+10. **Admin Features**
+    - Admins can manage notices and educational content uploads.
+
+11. **Account Management**
+    - Users can edit their details, verify student status, and delete their accounts if needed.
+
+12. **About Us**
+    - Details about the developers and project.
+
+13. **Settings**
+    - Personalize theme, change password, verify account, and manage preferences.
+
+14. **Log Out**
+    - Secure logout, redirecting users to the login screen.
+
+---
+
+## Aim
+
+UniTalk addresses the challenge of managing academic and personal responsibilities in college. By offering a centralized platform for resources, activities, and communication, UniTalk streamlines the student experience, fostering academic and personal growth.
+
+---
+
+## Technologies Used
+
+- **Mobile Frontend**: Kotlin
+- **Backend**: Firebase (Authentication, Database, Storage, Hosting)
+- **Real-time Database**: Firebase Realtime Database
+- **API**: Node.js
+
+---
 
 ## Aim
 Navigating the complexities of college life requires effective management of academic and personal responsibilities. 
