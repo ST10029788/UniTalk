@@ -45,6 +45,10 @@ The latest UniTalk updates improve user experience with new features in account 
 
 4. **Language Support**
    - The app adapts to the device’s language settings automatically.
+  
+5. **Offline Access**
+   - Users can now access certain features offline.
+   - This includes downloading from the app.
 
 ---
 
