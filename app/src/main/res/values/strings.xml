@@ -80,6 +80,7 @@
     <string name="change_password">Change Password</string>
     <string name="verify_account">Verify Account</string>
     <string name="delete_account">Delete Account</string>
+    <string name="language_options" translatable="false">Language Options</string>
     <string-array name="language_options">
         <item>en</item>
         <item>af</item>

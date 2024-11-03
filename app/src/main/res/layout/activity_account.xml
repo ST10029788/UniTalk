@@ -336,7 +336,7 @@
                         android:drawableStart="@drawable/ic_alphabetical"
                         android:drawableEnd="@drawable/ic_next_gray"
                         android:drawablePadding="10dp"
-                        android:text="@string/languages"
+                        android:text="@string/language_options"
                         android:textColor="#7D5260"
                         android:textStyle="bold" />
 
