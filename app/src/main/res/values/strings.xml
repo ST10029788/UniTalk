@@ -80,6 +80,11 @@
     <string name="change_password">Change Password</string>
     <string name="verify_account">Verify Account</string>
     <string name="delete_account">Delete Account</string>
+    <string-array name="language_options">
+        <item>en</item>
+        <item>af</item>
+        <item>zu</item>
+    </string-array>
     <string name="dark_mode">Dark Mode</string>
     <string name="pick_up_to_10_images">Pick up to 10 images</string>
     <string name="brand">Brand</string>

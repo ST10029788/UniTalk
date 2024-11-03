@@ -2,10 +2,15 @@ package com.scriptsquad.unitalk.Account
 
 import android.app.ProgressDialog
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.content.res.Configuration
 import android.os.Bundle
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import android.util.Log
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import java.util.*
 import androidx.appcompat.app.AppCompatDelegate
 import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
@@ -13,10 +18,10 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.scriptsquad.unitalk.databinding.ActivityAccountBinding
-import com.scriptsquad.unitalk.StartPage.Log_In_Screen
 import com.scriptsquad.unitalk.R
+import com.scriptsquad.unitalk.StartPage.Log_In_Screen
 import com.scriptsquad.unitalk.Utilities.Utils
+import com.scriptsquad.unitalk.databinding.ActivityAccountBinding
 
 //method used from YouTube
 //https://youtu.be/ymnKQVLs93c?si=vBY97O9HyEG277Pp
@@ -35,11 +40,42 @@ class Account_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityAccountBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setContentView(R.layout.activity_account)
 
         firebaseAuth=FirebaseAuth.getInstance()
 
         val sharedPreferences = getSharedPreferences("Settings", MODE_PRIVATE)
         val isDarkModeOn = sharedPreferences.getBoolean("isDarkModeOn", false)
+
+        val languageSpinner: Spinner = findViewById(R.id.languageSpinner)
+
+        val language = sharedPreferences.getString("selected_language", "en")
+        changeLanguage(language ?: "en") // Default to English if no preference is set
+
+        setContentView(R.layout.activity_account)
+
+        // Create an ArrayAdapter using a string array and a default spinner layout
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.language_options, // Define this array in strings.xml
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            // Specify the layout to use when the list of choices appears
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            // Apply the adapter to the spinner
+            languageSpinner.adapter = adapter
+        }
+
+        languageSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+                val selectedLanguage = parent.getItemAtPosition(position).toString()
+                changeLanguage(selectedLanguage)
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>) {
+                // Do nothing
+            }
+        }
 
         if (isDarkModeOn) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
@@ -102,6 +138,26 @@ class Account_Activity : AppCompatActivity() {
     //method used from YouTube
     //https://youtu.be/GZnCHLEo6ng?si=gq68FKihAFGVrpPi
     //channel: Mohsen Mashkour
+
+
+
+    private fun changeLanguage(language: String) {
+        val sharedPreferences = getSharedPreferences("app_preferences", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putString("selected_language", language)
+        editor.apply()
+
+        val locale = Locale(language)
+        Locale.setDefault(locale)
+        val config = Configuration()
+        config.locale = locale
+        resources.updateConfiguration(config, resources.displayMetrics)
+
+        // Restart the activity to apply the language change
+        val intent = intent
+        finish()
+        startActivity(intent)
+    }
 
     private fun loadMyInfo() {
 
