@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.biometric.BiometricPrompt
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -23,6 +24,9 @@ import java.lang.Exception
 //channel: TECH_WORLD
 class Log_In_Screen : AppCompatActivity() {
 
+    private lateinit var biometricPrompt: BiometricPrompt
+    private lateinit var promptInfo: BiometricPrompt.PromptInfo
+
     private companion object {
         private const val TAG = "LOGIN_OPTIONS_TAG"
     }
@@ -35,81 +39,53 @@ class Log_In_Screen : AppCompatActivity() {
     // Late-initialized variable for the activity's binding
     private lateinit var binding: ActivityLogInBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
         super.onCreate(savedInstanceState)
-        // Inflate the activity's layout and bind it to the activity
         binding = ActivityLogInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Initialize progressDialog and firebaseAuth
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Please wait...")
         progressDialog.setCanceledOnTouchOutside(false)
 
+        // Initialize FirebaseAuth
         firebaseAuth = FirebaseAuth.getInstance()
 
-        // Create a default admin account if it doesn't exist
-        createDefaultAdminAccount()
 
         // Configure Google sign-in options
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail().build()
-
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
 
+        // Set up button click listeners
+        setupButtonListeners()
+    }
 
-//
+    // Move button listeners to a separate function for cleaner code
+    private fun setupButtonListeners() {
         binding.LogInEmailBtn.setOnClickListener {
             startActivity(Intent(this@Log_In_Screen, Log_In_Using_Email_Activity::class.java))
         }
-
         binding.LogInGoogleBtn.setOnClickListener {
             beginGoogleLogin()
         }
         binding.LogInPhoneBtn.setOnClickListener {
             startActivity(Intent(this@Log_In_Screen, Log_In_Using_Phone_Activity::class.java))
         }
-
         binding.LogInGuestBtn.setOnClickListener {
             continueAsGuest()
         }
-        // Redirect to sign-up screen when "Sign up here" is clicked
         binding.signupredirect.setOnClickListener {
-            startActivity(Intent(this@Log_In_Screen, Register_Using_Email_Activity::class.java)) // Replace SignUpActivity with your actual sign-up activity class
+            startActivity(Intent(this@Log_In_Screen, Register_Using_Email_Activity::class.java))
         }
-
     }
 
     //method used from YouTube
     //https://youtu.be/KJ3ChWp0Qd0?si=IVsBM_mGkUYfSmAF
     //channel: Coding Meet
-    private fun createDefaultAdminAccount() {
-        val email = "admin@varsitycollege.co.za"
-        val password = "admin123"
 
-        firebaseAuth.createUserWithEmailAndPassword(email, password)
-            .addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    val uid = task.result.user!!.uid
 
-                    // Assign the admin role to the user
-                    val hashMap = HashMap<String, Any>()
-                    hashMap["role"] = "admin"
-
-                    val ref = FirebaseDatabase.getInstance().getReference("Users")
-                    ref.child(uid).updateChildren(hashMap)
-                        .addOnSuccessListener {
-                            Log.d(TAG, "Default admin account created successfully")
-                        }
-                        .addOnFailureListener { e ->
-                            Log.e(TAG, "Error creating default admin account", e)
-                        }
-                } else {
-                    Log.e(TAG, "Error creating default admin account", task.exception)
-                }
-            }
-    }
     private val email: String = "guestuser@gmail.com"
     private val password: String = "1234guest"
 
@@ -140,11 +116,11 @@ class Log_In_Screen : AppCompatActivity() {
     private fun beginGoogleLogin() {
         Log.d(TAG, "beginGoogleLogin:")
         val googleSignInIntent = mGoogleSignInClient.signInIntent
-        googleSignnInARL.launch(googleSignInIntent)
+        googleSignInARL.launch(googleSignInIntent)  // Fixed typo here
     }
 
     // Activity result launcher for the Google sign-in activity
-    private val googleSignnInARL = registerForActivityResult(
+    private val googleSignInARL = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) { result -> // Check if the result is OK
         Log.d(TAG, "googleSignInARL: ")
@@ -239,5 +215,12 @@ class Log_In_Screen : AppCompatActivity() {
 
 
     }
+    override fun onDestroy() {
+        super.onDestroy()
+        if (::progressDialog.isInitialized && progressDialog.isShowing) {
+            progressDialog.dismiss()
+        }
+    }
+
 
 }

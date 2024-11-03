@@ -49,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Ad Details" />
+            android:text="@string/ad_details" />
 
         <ImageButton
             android:id="@+id/toolbarDeleteBtn"
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imageSliderVp"
                 android:layout_toEndOf="@+id/priceSymbolTv"
-                android:text="00" />
+                android:text="@string/_00" />
 
             <TextView
                 android:id="@+id/conditionTv"
@@ -110,7 +110,7 @@
                 android:layout_below="@+id/imageSliderVp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="4dp"
-                android:text="New"
+                android:text="@string/new_cond"
                 android:textSize="12sp" />
 
             <TextView
@@ -120,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imageSliderVp"
                 android:layout_alignParentEnd="true"
-                android:text="dd/MM/yyyy" />
+                android:text="@string/dd_mm_yyyy" />
 
             <TextView
                 android:id="@+id/categoryLabelTv"
@@ -129,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/dateTv"
                 android:layout_marginTop="10dp"
-                android:text="Category" />
+                android:text="@string/category" />
 
             <TextView
                 android:id="@+id/categoryTv"
@@ -146,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/categoryTv"
                 android:layout_marginTop="10dp"
-                android:text="Title" />
+                android:text="@string/title" />
 
             <TextView
                 android:id="@+id/titleTv"
@@ -163,7 +163,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/titleTv"
                 android:layout_marginTop="10dp"
-                android:text="Description" />
+                android:text="@string/description" />
 
 
             <TextView
@@ -181,7 +181,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/descriptionTv"
                 android:layout_marginTop="10dp"
-                android:text="Address" />
+                android:text="@string/address" />
 
             <TextView
                 android:id="@+id/addressTv"
@@ -198,7 +198,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/addressTv"
                 android:layout_marginTop="10dp"
-                android:text="Seller Detail" />
+                android:text="@string/seller_detail" />
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/sellerProfileCv"
@@ -240,7 +240,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/sellerNameTv"
                         android:layout_toEndOf="@+id/sellerProfileIv"
-                        android:text="Member Since" />
+                        android:text="@string/member_since" />
 
                     <TextView
                         android:id="@+id/memberSinceTv"
@@ -250,7 +250,7 @@
                         android:layout_below="@+id/sellerNameTv"
                         android:layout_marginStart="2dp"
                         android:layout_toEndOf="@+id/memberSinceLabelTv"
-                        android:text="dd/MM/yyyy" />
+                        android:text="@string/dd_mm_yyyy" />
 
                 </RelativeLayout>
 
@@ -275,7 +275,7 @@
             android:layout_weight="1"
             android:layout_marginEnd="2dp"
             android:textSize="8sp"
-            android:text="Chat"
+            android:text="@string/chat"
             app:cornerRadius="8dp"
             app:icon="@drawable/ic_chat_white"
             app:iconSize="17dp"
@@ -290,7 +290,7 @@
             android:layout_weight="1"
             android:layout_marginEnd="2dp"
             android:textSize="8sp"
-            android:text="CALL"
+            android:text="@string/call"
             app:cornerRadius="8dp"
             android:textColor="@color/white"
             app:iconTint="@color/white"
@@ -305,7 +305,7 @@
             android:layout_weight="1"
             android:layout_marginEnd="2dp"
             android:textSize="8sp"
-            android:text="Sms"
+            android:text="@string/sms"
             app:cornerRadius="8dp"
             android:textColor="@color/white"
             app:iconTint="@color/white"
@@ -320,7 +320,7 @@
             android:layout_weight="1"
             android:layout_marginEnd="2dp"
             android:textSize="8sp"
-            android:text="Map"
+            android:text="@string/map"
             app:cornerRadius="8dp"
             android:textColor="@color/white"
             app:iconTint="@color/white"

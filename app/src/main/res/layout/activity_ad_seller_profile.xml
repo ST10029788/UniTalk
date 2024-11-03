@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Seller Profile" />
+            android:text="@string/seller_profile" />
 
         <View
             android:layout_width="match_parent"
@@ -74,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/sellerNameTv"
                 android:layout_toEndOf="@+id/sellerProfileIv"
-                android:text="Member Since " />
+                android:text="@string/member_since" />
 
            <TextView
                android:id="@+id/sellerMemberSinceTv"
@@ -103,7 +103,7 @@
       android:layout_height="wrap_content"
       android:layout_width="wrap_content"
       style="@style/TextAppearance.MaterialComponents.Subtitle1"
-      android:text="Published Ads: "
+      android:text="@string/published_ads"
       android:layout_marginStart="5dp"
       android:layout_marginTop="5dp"
       android:layout_below="@+id/view1"/>

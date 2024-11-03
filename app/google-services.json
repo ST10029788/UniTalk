@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "409845598268-8566ugchhd149jkvuec9beh31319m4h9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.scriptsquad.unitalk",
+            "certificate_hash": "aa6b3add89a3f1eb6cc7f4ecfd88c4a2e915f068"
+          }
+        },
+        {
           "client_id": "409845598268-h3mpm0s7grc999nl3ud3vrl8gtvecuhr.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -18,19 +18,19 @@ class AddCategoryBooksActivity : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
 
     private lateinit var progressDialog: ProgressDialog
-
+    // Inflate the layout and set the content view
     override fun onCreate(savedInstanceState: Bundle?) {
         binding=ActivityAddCategoryBooksBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-
+        // Initialize Firebase authentication
         firebaseAuth = FirebaseAuth.getInstance()
-
+        // Initialize the progress dialog
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Please wait...")
         progressDialog.setMessage("Adding Category")
         progressDialog.setCanceledOnTouchOutside(false)
-
+        // Set up the back button click listener
         binding.backBtn.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }
@@ -43,7 +43,7 @@ class AddCategoryBooksActivity : AppCompatActivity() {
 
 
     private var category = ""
-
+//Validates the input data for the category.
     private fun validateData() {
 
         category = binding.categoryEt.text.toString().trim()
@@ -51,7 +51,7 @@ class AddCategoryBooksActivity : AppCompatActivity() {
         //validate data
 
         if (category.isEmpty()) {
-
+//            // Show error toast if the category is empty
             MotionToast.createColorToast(
                 this@AddCategoryBooksActivity,
                 "Error",
@@ -65,6 +65,7 @@ class AddCategoryBooksActivity : AppCompatActivity() {
                 )
             )
         } else {
+            // Proceed to add the category if validation is successful
             addCategoryFirebase()
         }
 

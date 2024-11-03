@@ -71,7 +71,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/baloo_bhai"
-                    android:text="Android/Kotlin"
+                    android:text="@string/android_kotlin"
                     android:textColor="#fff" />
 
 
@@ -121,7 +121,7 @@
                             <com.google.android.material.textview.MaterialTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Github"
+                                android:text="@string/github"
                                 android:textColor="#000"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
@@ -129,7 +129,7 @@
                             <com.google.android.material.textview.MaterialTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Github Repo"
+                                android:text="@string/github_repo"
                                 android:textColor="#6C6969"
                                 android:textSize="14sp" />
 
@@ -174,7 +174,7 @@
                             <com.google.android.material.textview.MaterialTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="About Me"
+                                android:text="@string/about_me"
                                 android:textColor="#000"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
@@ -182,7 +182,7 @@
                             <com.google.android.material.textview.MaterialTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="OPSC7312"
+                                android:text="@string/opsc7312"
                                 android:textColor="#6C6969"
                                 android:textSize="14sp" />
 
@@ -229,7 +229,7 @@
                             android:layout_marginTop="6dp"
                             android:layout_toEndOf="@id/missionIv"
                             android:fontFamily="@font/vollkornsemibold_zram"
-                            android:text="Our Mission"
+                            android:text="@string/our_mission"
                             android:textColor="#000"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -294,7 +294,7 @@
                             android:layout_marginTop="6dp"
                             android:layout_toEndOf="@id/aboutThisIv"
                             android:fontFamily="@font/vollkornsemibold_zram"
-                            android:text="About This App"
+                            android:text="@string/about_this_app"
                             android:textColor="#000"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -358,7 +358,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/vollkornsemibold_zram"
                             android:padding="10dp"
-                            android:text="Contact US:"
+                            android:text="@string/contact_us"
                             android:textColor="#000"
                             android:textSize="22sp"
                             android:textStyle="bold"
@@ -397,7 +397,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="15dp"
-                            android:text="+27 123 456 7890"
+                            android:text="@string/_27_123_456_7890"
                             android:textColor="#100307"
                             app:layout_constraintStart_toEndOf="@+id/whatsAppIv"
                             app:layout_constraintTop_toBottomOf="@+id/contactUsTv" />
@@ -420,7 +420,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="28dp"
-                            android:text="scriptsquad@gmail.com"
+                            android:text="@string/scriptsquad_gmail_com"
                             android:textColor="#100307"
                             app:layout_constraintStart_toEndOf="@+id/emailiv"
                             app:layout_constraintTop_toBottomOf="@+id/whatsAppTv" />
