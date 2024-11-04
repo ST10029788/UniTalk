@@ -4,7 +4,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'com.google.firebase.crashlytics'
     id 'org.sonarqube' version "4.0.0.2929" apply false
-    id 'com.google.devtools.ksp' version '1.9.0-1.0.12'
+    id 'com.google.devtools.ksp' version '2.0.20-1.0.24'
 }
 
 android {
@@ -16,8 +16,8 @@ android {
         minSdk 23
         multiDexEnabled true
         targetSdk 35
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
