@@ -31,7 +31,7 @@ The latest UniTalk updates improve user experience with new features in account 
 
 1. **Sign in/Login**
    - **Biometric Authentication**: Users can use fingerprint or face recognition for secure and convenient login.
-   - **Google Sign-In**: Google sign-in is now available.
+   - **Google Sign-In**: Google sign-in is now available, but limited to IIE students and staff/admin
    - **Password Recovery**: Users can reset their password by receiving a reset email (use a student email for testing).
 
 2. **Account Management**
@@ -44,10 +44,10 @@ The latest UniTalk updates improve user experience with new features in account 
    - **Communication Options**: Use in-app chat, calls, or SMS for interactions about listings.
 
 4. **Language Support**
-   - The app adapts to the device’s language settings automatically.
+   - The app adapts to the device’s language settings automatically depending on the phone's area code
   
 5. **Offline Access**
-   - Users can now access certain features offline.
+   - Users can now access certain features offline by downloading the material
    - This includes downloading from the app.
 
 ---
