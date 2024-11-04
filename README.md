@@ -1,6 +1,8 @@
 Video Demonstrations: [here](https://drive.google.com/drive/folders/1slJdthD7YTVH6XwCwGNl7oal0xD5uwKH?usp=sharing)
 
 Playstore submission documents under Playstore Folder
+unitalk6.wordpress.com hosts Privacy Policy and Deletion Request.
+
 
 # UniTalk: Your VC Studies Companion
 This Android Application, created as part of the OPSC7312 module, is designed to enhance your college experience by integrating essential academic and social features into a single platform. Whether you’re studying for exams, connecting with peers, or keeping up with campus news, UniTalk has got you covered.
